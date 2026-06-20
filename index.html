@@ -656,21 +656,91 @@
         </a>
       </div>
 
-      <!-- 副 CTA 連結列 -->
-      <div class="flex flex-wrap items-center gap-x-5 gap-y-2 text-xs text-fgMute mb-10" data-reveal>
-        <span class="text-fgSoft">還能免費領:</span>
-        <a href="https://lin.ee/uXgDcE3" target="_blank" rel="noopener" class="text-fg hover:text-brand transition">· 免費獲客診斷</a>
-        <a href="https://lin.ee/uXgDcE3" target="_blank" rel="noopener" class="text-fg hover:text-brand transition">· 免費競品分析</a>
-        <a href="https://lin.ee/uXgDcE3" target="_blank" rel="noopener" class="text-fg hover:text-brand transition">· 免費帳號健檢</a>
+      <!-- 4 個免費領 CTA(亮色卡片 + 邊框 + hover 動畫) -->
+      <div class="mb-12" data-reveal>
+        <div class="flex items-center gap-2 mb-4">
+          <span class="text-xs text-fgSoft tracking-wider">🎁 還能免費領 · 4 選 1</span>
+          <span class="flex-1 h-px bg-gradient-to-r from-line via-brand/20 to-transparent"></span>
+        </div>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
+
+          <!-- 卡片 1:免費 AI 流量健檢(主推,磚紅漸層) -->
+          <a href="https://lin.ee/uXgDcE3" target="_blank" rel="noopener"
+             class="group relative card p-4 hover:scale-[1.03] hover:-translate-y-0.5 transition-all duration-300 hover:shadow-xl hover:shadow-brand/30 border-brand/40 bg-gradient-to-br from-brand/10 via-surface to-surface/60 backdrop-blur">
+            <div class="absolute inset-0 rounded-2xl bg-gradient-to-br from-brand/0 via-brand/5 to-brand/10 opacity-0 group-hover:opacity-100 transition pointer-events-none"></div>
+            <div class="relative">
+              <div class="text-2xl mb-2 group-hover:scale-110 transition">🤖</div>
+              <div class="font-bold text-sm text-white mb-1">AI 流量健檢</div>
+              <div class="text-[11px] text-fgMute leading-relaxed mb-2">5 分鐘找出流量與成交問題</div>
+              <div class="text-[11px] text-brand font-bold flex items-center gap-1">
+                立即領取 <span class="group-hover:translate-x-1 transition">→</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- 卡片 2:免費獲客診斷(薄荷綠) -->
+          <a href="https://lin.ee/uXgDcE3" target="_blank" rel="noopener"
+             class="group relative card p-4 hover:scale-[1.03] hover:-translate-y-0.5 transition-all duration-300 hover:shadow-xl hover:shadow-ai/30 border-ai/40 bg-gradient-to-br from-ai/10 via-surface to-surface/60 backdrop-blur">
+            <div class="absolute inset-0 rounded-2xl bg-gradient-to-br from-ai/0 via-ai/5 to-ai/10 opacity-0 group-hover:opacity-100 transition pointer-events-none"></div>
+            <div class="relative">
+              <div class="text-2xl mb-2 group-hover:scale-110 transition">🎯</div>
+              <div class="font-bold text-sm text-white mb-1">獲客診斷</div>
+              <div class="text-[11px] text-fgMute leading-relaxed mb-2">看獲客哪裡漏 + 怎麼補</div>
+              <div class="text-[11px] text-ai font-bold flex items-center gap-1">
+                立即領取 <span class="group-hover:translate-x-1 transition">→</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- 卡片 3:免費競品分析(暖金) -->
+          <a href="https://lin.ee/uXgDcE3" target="_blank" rel="noopener"
+             class="group relative card p-4 hover:scale-[1.03] hover:-translate-y-0.5 transition-all duration-300 hover:shadow-xl hover:shadow-gold/30 border-gold/40 bg-gradient-to-br from-gold/10 via-surface to-surface/60 backdrop-blur">
+            <div class="absolute inset-0 rounded-2xl bg-gradient-to-br from-gold/0 via-gold/5 to-gold/10 opacity-0 group-hover:opacity-100 transition pointer-events-none"></div>
+            <div class="relative">
+              <div class="text-2xl mb-2 group-hover:scale-110 transition">🔍</div>
+              <div class="font-bold text-sm text-white mb-1">競品分析</div>
+              <div class="text-[11px] text-fgMute leading-relaxed mb-2">看對手做什麼 + 找空缺</div>
+              <div class="text-[11px] text-gold font-bold flex items-center gap-1">
+                立即領取 <span class="group-hover:translate-x-1 transition">→</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- 卡片 4:免費帳號健檢(紫) -->
+          <a href="https://lin.ee/uXgDcE3" target="_blank" rel="noopener"
+             class="group relative card p-4 hover:scale-[1.03] hover:-translate-y-0.5 transition-all duration-300 hover:shadow-xl hover:shadow-purple-500/30 border-purple-500/40 bg-gradient-to-br from-purple-500/10 via-surface to-surface/60 backdrop-blur">
+            <div class="absolute inset-0 rounded-2xl bg-gradient-to-br from-purple-500/0 via-purple-500/5 to-purple-500/10 opacity-0 group-hover:opacity-100 transition pointer-events-none"></div>
+            <div class="relative">
+              <div class="text-2xl mb-2 group-hover:scale-110 transition">📊</div>
+              <div class="font-bold text-sm text-white mb-1">帳號健檢</div>
+              <div class="text-[11px] text-fgMute leading-relaxed mb-2">看 IG / LINE / 網站健不健康</div>
+              <div class="text-[11px] text-purple-400 font-bold flex items-center gap-1">
+                立即領取 <span class="group-hover:translate-x-1 transition">→</span>
+              </div>
+            </div>
+          </a>
+
+        </div>
       </div>
 
-      <!-- 4 大服務關鍵字 -->
-      <div class="flex flex-wrap items-center gap-x-6 gap-y-3 text-xs text-fgMute" data-reveal>
-        <span class="flex items-center gap-2"><span class="w-1 h-1 rounded-full bg-ai"></span>AI 短劇</span>
-        <span class="flex items-center gap-2"><span class="w-1 h-1 rounded-full bg-ai"></span>網站架設</span>
-        <span class="flex items-center gap-2"><span class="w-1 h-1 rounded-full bg-ai"></span>LINE OA</span>
-        <span class="flex items-center gap-2"><span class="w-1 h-1 rounded-full bg-ai"></span>AI 客服</span>
-        <span class="flex items-center gap-2"><span class="w-1 h-1 rounded-full bg-ai"></span>自動化系統</span>
+      <!-- 5 大服務關鍵字(保留,但用 chip 樣式)-->
+      <div class="flex flex-wrap items-center gap-2" data-reveal>
+        <span class="text-xs text-fgSoft mr-2">完整服務 ·</span>
+        <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface border border-ai/30 text-xs text-ai">
+          <span class="w-1.5 h-1.5 rounded-full bg-ai animate-pulse"></span>AI 短劇
+        </span>
+        <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface border border-brand/30 text-xs text-brand">
+          <span class="w-1.5 h-1.5 rounded-full bg-brand animate-pulse"></span>網站架設
+        </span>
+        <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface border border-gold/30 text-xs text-gold">
+          <span class="w-1.5 h-1.5 rounded-full bg-gold animate-pulse"></span>LINE OA
+        </span>
+        <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface border border-purple-500/30 text-xs text-purple-400">
+          <span class="w-1.5 h-1.5 rounded-full bg-purple-500 animate-pulse"></span>AI 客服
+        </span>
+        <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface border border-line text-xs text-fgSoft">
+          <span class="w-1.5 h-1.5 rounded-full bg-fgSoft animate-pulse"></span>自動化系統
+        </span>
       </div>
     </div>
   </section>
@@ -678,6 +748,224 @@
   <div class="hairline max-w-6xl mx-auto"></div>
 
   <!-- ============ MARQUEE ============ -->
+  <!-- ============ AI 短劇服務(獨立大區塊)============ -->
+  <section id="ai-drama-service" class="py-20 md:py-28 relative overflow-hidden">
+    <!-- 背景裝飾 -->
+    <div class="glow-orb bg-brand top-0 -right-32 opacity-40"></div>
+    <div class="glow-orb bg-ai -bottom-32 -left-32 opacity-30"></div>
+
+    <div class="relative max-w-6xl mx-auto px-6">
+      <!-- 標題區 -->
+      <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-12">
+        <div>
+          <div class="label mb-4" data-reveal style="color:#E5553D;">— AI 短劇 · 服務介紹</div>
+          <h2 class="h2-section mb-3 max-w-2xl" data-reveal>
+            7 天可上線的 <span class="grad-text">AI 短劇</span><br />從腳本到發布一次到位
+          </h2>
+          <p class="body max-w-2xl" data-reveal>
+            爆款腳本、分鏡、AI 人物、配音建議、剪輯規劃、發布時程 — 6 大交付物,
+            讓你不用自己摸索也能做出能跑流量的內容。
+          </p>
+        </div>
+        <div class="shrink-0" data-reveal>
+          <div class="card p-5 inline-flex flex-col items-start gap-2" style="border-color:#E5553D;border-width:2px;">
+            <div class="text-xs text-fgMute">階梯 1 · 入門方案</div>
+            <div class="text-3xl font-black" style="color:#E5553D;">NT$ 8,800</div>
+            <div class="text-xs text-fgMute">起 / 案 · 7 天交付</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 6 大交付物網格 -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-10">
+        <div class="card p-6 hover:border-brand/50 hover:shadow-lg hover:shadow-brand/10 transition group" data-reveal>
+          <div class="text-3xl mb-3 group-hover:scale-110 transition">📝</div>
+          <div class="font-bold text-base text-white mb-1">爆款腳本</div>
+          <div class="text-xs text-fgMute mb-3">3 支 / 案 · 15-30 秒 / 支</div>
+          <div class="text-sm text-fgSoft leading-relaxed">3 秒抓眼球 Hook + 痛點共鳴 + CTA 引導。我們研究過 100+ 爆款公式,直接套用。</div>
+        </div>
+
+        <div class="card p-6 hover:border-brand/50 hover:shadow-lg hover:shadow-brand/10 transition group" data-reveal>
+          <div class="text-3xl mb-3 group-hover:scale-110 transition">🎞</div>
+          <div class="font-bold text-base text-white mb-1">分鏡規劃</div>
+          <div class="text-xs text-fgMute mb-3">6-8 鏡 / 支 · 含鏡頭指令</div>
+          <div class="text-sm text-fgSoft leading-relaxed">每一鏡的畫面、字幕、配樂節奏都寫清楚。AI 工具照著跑就好,不用自己摸索。</div>
+        </div>
+
+        <div class="card p-6 hover:border-brand/50 hover:shadow-lg hover:shadow-brand/10 transition group" data-reveal>
+          <div class="text-3xl mb-3 group-hover:scale-110 transition">🤖</div>
+          <div class="font-bold text-base text-white mb-1">AI 人物設定</div>
+          <div class="text-xs text-fgMute mb-3">Prompt 包 · 直接套用</div>
+          <div class="text-sm text-fgSoft leading-relaxed">給你角色設定 Prompt(年齡 / 風格 / 語氣),AI 生成人物時直接用,不用試半天。</div>
+        </div>
+
+        <div class="card p-6 hover:border-brand/50 hover:shadow-lg hover:shadow-brand/10 transition group" data-reveal>
+          <div class="text-3xl mb-3 group-hover:scale-110 transition">🎙️</div>
+          <div class="font-bold text-base text-white mb-1">配音建議</div>
+          <div class="text-xs text-fgMute mb-3">風格稿 + 工具推薦</div>
+          <div class="text-sm text-fgSoft leading-relaxed">男聲 / 女聲 / 情境語氣建議稿,搭配 ElevenLabs / 悅聲 等工具。附設定參數。</div>
+        </div>
+
+        <div class="card p-6 hover:border-brand/50 hover:shadow-lg hover:shadow-brand/10 transition group" data-reveal>
+          <div class="text-3xl mb-3 group-hover:scale-110 transition">✂️</div>
+          <div class="font-bold text-base text-white mb-1">剪輯規劃</div>
+          <div class="text-xs text-fgMute mb-3">節奏表 + 軟體建議</div>
+          <div class="text-sm text-fgSoft leading-relaxed">秒數節奏、BGM 節點、字幕樣式。剪輯師照著做,新手也能剪出專業感。</div>
+        </div>
+
+        <div class="card p-6 hover:border-brand/50 hover:shadow-lg hover:shadow-brand/10 transition group" data-reveal>
+          <div class="text-3xl mb-3 group-hover:scale-110 transition">📅</div>
+          <div class="font-bold text-base text-white mb-1">發布建議</div>
+          <div class="text-xs text-fgMute mb-3">平台 + 時段 + Hashtag</div>
+          <div class="text-sm text-fgSoft leading-relaxed">IG Reels / TikTok / LINE / FB 怎麼選?幾點發?Hashtag 怎麼下?一次講清楚。</div>
+        </div>
+      </div>
+
+      <!-- 適用情境 + CTA -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div class="card p-5 flex items-start gap-3" data-reveal>
+          <div class="text-2xl shrink-0">🏠</div>
+          <div>
+            <div class="font-bold text-sm text-white mb-1">適合房仲</div>
+            <div class="text-xs text-fgSoft">屋主困境 → 物件特色 → LINE 帶看</div>
+          </div>
+        </div>
+        <div class="card p-5 flex items-start gap-3" data-reveal>
+          <div class="text-2xl shrink-0">💉</div>
+          <div>
+            <div class="font-bold text-sm text-white mb-1">適合醫美</div>
+            <div class="text-xs text-fgSoft">術前焦慮 → 術後蛻變 → 預約引導</div>
+          </div>
+        </div>
+        <div class="card p-5 flex items-start gap-3" data-reveal>
+          <div class="text-2xl shrink-0">🍜</div>
+          <div>
+            <div class="font-bold text-sm text-white mb-1">適合餐飲</div>
+            <div class="text-xs text-fgSoft">視覺衝擊 → 食物特寫 → 訂位導流</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-3 mt-10" data-reveal>
+        <a href="https://lin.ee/uXgDcE3" target="_blank" rel="noopener" class="btn-brand inline-flex">
+          🔥 從 8,800 開始做短劇 →
+        </a>
+        <a href="#cases" class="btn-ghost inline-flex text-sm">
+          看 4 種產業示範 ↓
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 網站架設服務(獨立大區塊)============ -->
+  <section id="website-service" class="py-20 md:py-28 relative overflow-hidden bg-surface/20">
+    <!-- 背景裝飾 -->
+    <div class="glow-orb bg-ai top-1/4 -left-32 opacity-40"></div>
+    <div class="glow-orb bg-gold bottom-0 right-1/4 opacity-30"></div>
+
+    <div class="relative max-w-6xl mx-auto px-6">
+      <!-- 標題區 -->
+      <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-12">
+        <div>
+          <div class="label mb-4" data-reveal style="color:#00E5A5;">— 網站架設 · 服務介紹</div>
+          <h2 class="h2-section mb-3 max-w-2xl" data-reveal>
+            <span class="grad-ai">14 天可上線</span>的成交型網站<br />把流量變預約
+          </h2>
+          <p class="body max-w-2xl" data-reveal>
+            一頁式設計、LINE OA 整合、預約表單、名單收集、基礎自動化 — 6 大交付物,
+            不只是「有網站」,而是「能成交的網站」。
+          </p>
+        </div>
+        <div class="shrink-0" data-reveal>
+          <div class="card p-5 inline-flex flex-col items-start gap-2" style="border-color:#00E5A5;border-width:2px;">
+            <div class="text-xs text-fgMute">階梯 2 · 主力方案 ⭐</div>
+            <div class="text-3xl font-black" style="color:#00E5A5;">NT$ 28,000</div>
+            <div class="text-xs text-fgMute">起 / 案 · 14 天交付</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 6 大交付物網格 -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-10">
+        <div class="card p-6 hover:border-ai/50 hover:shadow-lg hover:shadow-ai/10 transition group" data-reveal>
+          <div class="text-3xl mb-3 group-hover:scale-110 transition">🎨</div>
+          <div class="font-bold text-base text-white mb-1">成交型設計</div>
+          <div class="text-xs text-fgMute mb-3">1 頁式 · 手機優先</div>
+          <div class="text-sm text-fgSoft leading-relaxed">不是「漂亮」而是「會賣」。Hook、痛點、見證、CTA 都有,3 秒抓住、30 秒成交。</div>
+        </div>
+
+        <div class="card p-6 hover:border-ai/50 hover:shadow-lg hover:shadow-ai/10 transition group" data-reveal>
+          <div class="text-3xl mb-3 group-hover:scale-110 transition">📲</div>
+          <div class="font-bold text-base text-white mb-1">LINE OA 設定</div>
+          <div class="text-xs text-fgMute mb-3">加好友 + 歡迎訊息 + 標籤</div>
+          <div class="text-sm text-fgSoft leading-relaxed">讓客戶掃 QR 直接加好友,自動收到歡迎訊息 + 自動標籤分類(來源 / 產業 / 意圖)。</div>
+        </div>
+
+        <div class="card p-6 hover:border-ai/50 hover:shadow-lg hover:shadow-ai/10 transition group" data-reveal>
+          <div class="text-3xl mb-3 group-hover:scale-110 transition">📋</div>
+          <div class="font-bold text-base text-white mb-1">預約表單</div>
+          <div class="text-xs text-fgMute mb-3">Google Form / 自訂 / Calendly</div>
+          <div class="text-sm text-fgSoft leading-relaxed">客戶不用打電話,直接選時段預約。整合到 LINE / Email,你後台即時收到通知。</div>
+        </div>
+
+        <div class="card p-6 hover:border-ai/50 hover:shadow-lg hover:shadow-ai/10 transition group" data-reveal>
+          <div class="text-3xl mb-3 group-hover:scale-110 transition">🎁</div>
+          <div class="font-bold text-base text-white mb-1">名單收集</div>
+          <div class="text-xs text-fgMute mb-3">Lead magnet + 自動入表</div>
+          <div class="text-sm text-fgSoft leading-relaxed">送「免費 AI 流量健檢」之類的禮物,客戶留資料 → 自動入 Google Sheet → 自動跟單。</div>
+        </div>
+
+        <div class="card p-6 hover:border-ai/50 hover:shadow-lg hover:shadow-ai/10 transition group" data-reveal>
+          <div class="text-3xl mb-3 group-hover:scale-110 transition">⚡</div>
+          <div class="font-bold text-base text-white mb-1">基礎自動化</div>
+          <div class="text-xs text-fgMute mb-3">歡迎訊息 + 標籤分類</div>
+          <div class="text-sm text-fgSoft leading-relaxed">客戶加 LINE 自動收到歡迎訊息;填表單自動被標「hot lead」,你只看熱的客戶。</div>
+        </div>
+
+        <div class="card p-6 hover:border-ai/50 hover:shadow-lg hover:shadow-ai/10 transition group" data-reveal>
+          <div class="text-3xl mb-3 group-hover:scale-110 transition">🛡️</div>
+          <div class="font-bold text-base text-white mb-1">主機 + 網域 1 年</div>
+          <div class="text-xs text-fgMute mb-3">雲端主機 + SSL + 資安</div>
+          <div class="text-sm text-fgSoft leading-relaxed">Vercel / Cloudflare 全球 CDN,自動 HTTPS,DDoS 防護。第 1 年免費維護。</div>
+        </div>
+      </div>
+
+      <!-- 適用情境 + CTA -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div class="card p-5 flex items-start gap-3" data-reveal>
+          <div class="text-2xl shrink-0">💅</div>
+          <div>
+            <div class="font-bold text-sm text-white mb-1">適合美容</div>
+            <div class="text-xs text-fgSoft">作品集 → LINE 預約 → 跟單提醒</div>
+          </div>
+        </div>
+        <div class="card p-5 flex items-start gap-3" data-reveal>
+          <div class="text-2xl shrink-0">💪</div>
+          <div>
+            <div class="font-bold text-sm text-white mb-1">適合健身</div>
+            <div class="text-xs text-fgSoft">學員見證 → 免費體驗 → 課程報名</div>
+          </div>
+        </div>
+        <div class="card p-5 flex items-start gap-3" data-reveal>
+          <div class="text-2xl shrink-0">🏥</div>
+          <div>
+            <div class="font-bold text-sm text-white mb-1">適合醫美</div>
+            <div class="text-xs text-fgSoft">案例 → 醫師介紹 → 諮詢預約</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-3 mt-10" data-reveal>
+        <a href="https://lin.ee/uXgDcE3" target="_blank" rel="noopener" class="btn-brand inline-flex" style="background:#00E5A5;color:#000;">
+          🚀 從 28,000 建站 →
+        </a>
+        <a href="https://lin.ee/uXgDcE3" target="_blank" rel="noopener" class="btn-ghost inline-flex text-sm">
+          免費 AI 流量健檢
+        </a>
+      </div>
+    </div>
+  </section>
+
   <!-- ============ TRUST BAR ============ -->
   <section class="py-8 border-y border-line bg-surface/30">
     <div class="max-w-6xl mx-auto px-6">
