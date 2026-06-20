@@ -781,7 +781,7 @@
         <div class="card p-6 hover:border-brand/50 hover:shadow-lg hover:shadow-brand/10 transition group" data-reveal>
           <div class="text-3xl mb-3 group-hover:scale-110 transition">📝</div>
           <div class="font-bold text-base text-white mb-1">爆款腳本</div>
-          <div class="text-xs text-fgMute mb-3">2 支 / 案 · 15-30 秒 / 支 · <span class="text-ai font-bold">1 次免費修改</span></div>
+          <div class="text-xs text-fgMute mb-3">2 支 / 案 · 15-30 秒 / 支 · 修改另加 NT$ 1,500 / 次</div>
           <div class="text-sm text-fgSoft leading-relaxed">3 秒抓眼球 Hook + 痛點共鳴 + CTA 引導。我們研究過 100+ 爆款公式,直接套用。</div>
         </div>
 
@@ -1307,7 +1307,7 @@
             <li class="flex gap-2"><span class="text-ai shrink-0">✓</span><span>配音建議稿</span></li>
             <li class="flex gap-2"><span class="text-ai shrink-0">✓</span><span>剪輯規劃書</span></li>
             <li class="flex gap-2"><span class="text-ai shrink-0">✓</span><span>發布建議 (平台 / 時段 / Hashtag)</span></li>
-            <li class="flex gap-2"><span class="text-ai shrink-0">✓</span><span>3-5 天交付 · <strong class="text-ai">含 1 次免費修改</strong></span></li>
+            <li class="flex gap-2"><span class="text-fgMute shrink-0">+</span><span class="text-fgMute">修改需另加 <strong class="text-yellow-300">NT$ 1,500 / 次</strong>(不送免費修改)</span></li>
           </ul>
           <p class="text-xs text-fgMute italic mb-5">👉 幫助你開始經營短影音</p>
           <a href="https://lin.ee/uXgDcE3" target="_blank" rel="noopener" class="btn-ghost w-full justify-center text-sm mt-auto">
@@ -1376,41 +1376,69 @@
             <span class="label">Full</span>
           </div>
           <h3 class="font-bold text-lg mb-2">一條龍獲客系統</h3>
-          <div class="flex items-baseline gap-1 mb-1">
-            <div class="text-4xl font-black">95,000</div>
-            <div class="text-fgMute text-sm">元起 / 案 · 一次性</div>
+
+          <!-- 95,000 一次性 · 限前 3 位(跟階梯 2 一致風格)-->
+          <div class="mb-2">
+            <div class="text-sm text-fgMute">原價 <span class="line-through">NT$ 120,000</span></div>
+            <div class="flex items-center gap-2 mt-1">
+              <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-yellow-400/15 border border-yellow-400/40 text-yellow-300 text-[10px] mono tracking-wider font-bold">🔥 案例合作價</span>
+            </div>
+            <div class="flex items-baseline gap-1 mt-1">
+              <div class="text-4xl font-black">95,000</div>
+              <div class="text-fgMute text-sm">元起 / 案</div>
+              <div class="text-xs text-emerald-400 font-bold ml-2">省 $25,000</div>
+            </div>
           </div>
-          <p class="text-sm mb-5">
-            <span class="inline-block px-2 py-1 bg-brand/15 border border-brand/40 rounded text-brand font-bold mr-1 mb-1">AI 短劇 8-15 支</span>
-            <span class="inline-block px-2 py-1 bg-ai/15 border border-ai/40 rounded text-ai font-bold mr-1 mb-1">全客製網站</span>
-            <span class="inline-block px-2 py-1 bg-ai/15 border border-ai/40 rounded text-ai font-bold mr-1 mb-1">LINE OA + AI 客服</span>
-            <span class="inline-block px-2 py-1 bg-ai/15 border border-ai/40 rounded text-ai font-bold mr-1 mb-1">CRM</span>
-            <span class="inline-block px-2 py-1 bg-ai/15 border border-ai/40 rounded text-ai font-bold mr-1 mb-1">自動化</span>
-            <span class="inline-block px-2 py-1 bg-purple-500/15 border border-purple-500/40 rounded text-purple-400 font-bold mr-1 mb-1">30-45 天</span>
-            <span class="inline-block px-2 py-1 bg-emerald-500/15 border border-emerald-500/40 rounded text-emerald-400 font-bold">一次性</span>
-          </p>
+          <div class="mb-4 inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-red-500/15 border border-red-500/40 text-red-400 text-xs font-bold">
+            🔥 限前 3 位客戶 · 一次性案件
+          </div>
+
+          <!-- 8 大交付物排版整齊(2x4 grid)-->
+          <div class="grid grid-cols-2 gap-2 mb-5">
+            <span class="px-2 py-1.5 bg-brand/15 border border-brand/40 rounded text-brand text-[11px] font-bold text-center">AI 短劇 8-15 支</span>
+            <span class="px-2 py-1.5 bg-ai/15 border border-ai/40 rounded text-ai text-[11px] font-bold text-center">全客製網站</span>
+            <span class="px-2 py-1.5 bg-ai/15 border border-ai/40 rounded text-ai text-[11px] font-bold text-center">LINE OA + AI 客服</span>
+            <span class="px-2 py-1.5 bg-ai/15 border border-ai/40 rounded text-ai text-[11px] font-bold text-center">CRM 客戶管理</span>
+            <span class="px-2 py-1.5 bg-ai/15 border border-ai/40 rounded text-ai text-[11px] font-bold text-center">完整自動化</span>
+            <span class="px-2 py-1.5 bg-purple-500/15 border border-purple-500/40 rounded text-purple-400 text-[11px] font-bold text-center">主機 / 網域 1 年</span>
+            <span class="px-2 py-1.5 bg-gold/15 border border-gold/40 rounded text-gold text-[11px] font-bold text-center">前 3 月免費維護</span>
+            <span class="px-2 py-1.5 bg-emerald-500/15 border border-emerald-500/40 rounded text-emerald-400 text-[11px] font-bold text-center">數據報告</span>
+          </div>
+
+          <!-- 一次性 + 30-45 天(獨立的 highlight 列)-->
+          <div class="flex items-center gap-3 mb-5">
+            <span class="px-3 py-1.5 bg-emerald-500/15 border border-emerald-500/40 rounded-full text-emerald-400 text-xs font-bold">
+              ✅ 一次性案件(非訂閱)
+            </span>
+            <span class="px-3 py-1.5 bg-purple-500/15 border border-purple-500/40 rounded-full text-purple-400 text-xs font-bold">
+              ⏰ 30-45 天交付
+            </span>
+          </div>
+
           <hr class="border-line mb-5" />
-          <div class="text-xs text-fgMute mb-3">適合:</div>
+          <div class="text-xs text-fgMute mb-3">適合:
           <ul class="space-y-1.5 text-sm text-fgSoft mb-5">
-            <li>· 想全部交給專業做</li>
-            <li>· 想建完整獲客閉環</li>
+            <li>· 想全部交給專業做 · 不想自己管</li>
+            <li>· 想建完整獲客閉環(短劇 → 預約 → 跟單)</li>
             <li>· 中大型品牌 · 想省時間</li>
+            <li>· <strong class="text-yellow-300">想用案例價升級</strong>(前 3 位限定)</li>
           </ul>
-          <div class="text-xs text-fgMute mb-2">包含(8 大交付物):</div>
-          <ul class="space-y-2 mb-3 text-sm text-fgSoft">
-            <li class="flex gap-2"><span class="text-ai shrink-0">✓</span><span><strong>AI 短劇 8-15 支</strong>(15-60 秒 / 支)</span></li>
-            <li class="flex gap-2"><span class="text-ai shrink-0">✓</span><span>腳本 / 分鏡 / AI 人物 / 配音 / 字幕</span></li>
-            <li class="flex gap-2"><span class="text-ai shrink-0">✓</span><span><strong>全客製網站</strong>(多頁式 · 含設計 + 後台)</span></li>
-            <li class="flex gap-2"><span class="text-ai shrink-0">✓</span><span><strong>LINE OA + AI 客服</strong>(自動回覆 + 標籤)</span></li>
-            <li class="flex gap-2"><span class="text-ai shrink-0">✓</span><span><strong>CRM 客戶管理</strong>(6 階段跟單)</span></li>
-            <li class="flex gap-2"><span class="text-ai shrink-0">✓</span><span><strong>完整自動化流程</strong>(從短劇 → 預約 → 跟單)</span></li>
-            <li class="flex gap-2"><span class="text-ai shrink-0">✓</span><span>主機 / 網域 / 資安 1 年</li>
-            <li class="flex gap-2"><span class="text-ai shrink-0">✓</span><span>前 3 個月免費維護 + 數據報告</li>
-          </ul>
-          <p class="text-xs text-ai font-bold mb-2">⏰ 30-45 天交付 · 一次性案件(非訂閱)</p>
-          <p class="text-xs text-fgMute italic mb-5">👉 幫助建立完整獲客系統</p>
+
+          <div class="text-xs text-fgMute mb-3">8 大交付物完整說明:</div>
+          <div class="space-y-2 mb-5">
+            <div class="flex items-start gap-2 text-sm text-fgSoft"><span class="text-brand shrink-0 mt-0.5">▸</span><span><strong class="text-white">AI 短劇 8-15 支</strong>(15-60 秒 / 支)+ 腳本 / 分鏡 / AI 人物 / 配音 / 字幕</span></div>
+            <div class="flex items-start gap-2 text-sm text-fgSoft"><span class="text-ai shrink-0 mt-0.5">▸</span><span><strong class="text-white">全客製網站</strong>(多頁式 · 含設計 + 後台)</span></div>
+            <div class="flex items-start gap-2 text-sm text-fgSoft"><span class="text-ai shrink-0 mt-0.5">▸</span><span><strong class="text-white">LINE OA + AI 客服</strong>(自動回覆 + 標籤分類)</span></div>
+            <div class="flex items-start gap-2 text-sm text-fgSoft"><span class="text-ai shrink-0 mt-0.5">▸</span><span><strong class="text-white">CRM 客戶管理</strong>(6 階段跟單)</span></div>
+            <div class="flex items-start gap-2 text-sm text-fgSoft"><span class="text-ai shrink-0 mt-0.5">▸</span><span><strong class="text-white">完整自動化流程</strong>(從短劇 → 預約 → 跟單)</span></div>
+            <div class="flex items-start gap-2 text-sm text-fgSoft"><span class="text-ai shrink-0 mt-0.5">▸</span><span><strong class="text-white">主機 / 網域 / 資安 1 年</strong>(Vercel + Cloudflare)</span></div>
+            <div class="flex items-start gap-2 text-sm text-fgSoft"><span class="text-gold shrink-0 mt-0.5">▸</span><span class="text-gold"><strong>前 3 個月免費維護</strong>(內容更新、安全性修補)</span></div>
+            <div class="flex items-start gap-2 text-sm text-fgSoft"><span class="text-emerald-400 shrink-0 mt-0.5">▸</span><span class="text-emerald-400"><strong>月度數據報告</strong>(觀看 / 點擊 / 預約)</span></div>
+          </div>
+
+          <p class="text-xs text-fgMute italic mb-5">👉 幫助建立完整獲客系統(短劇 → 預約 → 跟單全自動)</p>
           <a href="https://lin.ee/uXgDcE3" target="_blank" rel="noopener" class="btn-ghost w-full justify-center text-sm mt-auto">
-            從 95,000 全託管 →
+            🔥 搶 95,000 案例價(剩 3 名額) →
           </a>
         </div>
       </div>
@@ -2028,7 +2056,7 @@
       }
       // 短劇(8,800 細節)
       if (/短劇|影片|腳本|分鏡/.test(t)) {
-        return '🎬 <b>AI 短劇體驗方案 · NT$ 8,800 起</b><br/><br/><b>包含 6 大交付物:</b><br/>✓ 爆款腳本(2 支 × 15-30 秒)<br/>✓ 分鏡規劃(6-8 鏡/支)<br/>✓ AI 人物設定 Prompt<br/>✓ 配音建議稿<br/>✓ 剪輯規劃書<br/>✓ 發布建議(平台/時段/Hashtag)<br/><br/>⏰ <b>3-5 天交付</b> · 含 1 次免費修改<br/><br/>適合:<strong class="text-yellow-300">第一次合作</strong> 的房仲 / 醫美 / 美業 / 餐飲<br/><br/>想看示範?輸入「案例」<br/>想升級到 28,000?輸入「網站」';
+        return '🎬 <b>AI 短劇體驗方案 · NT$ 8,800 起</b><br/><br/><b>包含 6 大交付物:</b><br/>✓ 爆款腳本(2 支 × 15-30 秒)<br/>✓ 分鏡規劃(6-8 鏡/支)<br/>✓ AI 人物設定 Prompt<br/>✓ 配音建議稿<br/>✓ 剪輯規劃書<br/>✓ 發布建議(平台/時段/Hashtag)<br/><br/>⏰ <b>3-5 天交付</b> · <span style="color:#FFD700;">修改需另加 NT$ 1,500 / 次</span>(不送免費修改)<br/><br/>適合:<strong class="text-yellow-300">第一次合作</strong> 的房仲 / 醫美 / 美業 / 餐飲<br/><br/>想看示範?輸入「案例」<br/>想升級到 28,000?輸入「網站」';
       }
       // 網站(28,000 細節)
       if (/網站|架站|官網|電商|頁|landing/.test(t)) {
