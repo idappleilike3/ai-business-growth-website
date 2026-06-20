@@ -1,0 +1,35 @@
+# ============================================
+# AI商業成長 · Website .gitignore
+# ============================================
+
+# Python temp fix scripts (執行後就刪,但保險起見再列一次)
+tmpfix*.py
+tmpfix*.txt
+*.pyc
+__pycache__/
+
+# OS / Editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Node / Vercel
+node_modules/
+.vercel/
+*.log
+
+# 環境變數(token / 密碼絕不入 Git)
+.env
+.env.local
+.env.*.local
+
+# 測試 / 暫存
+*.tmp
+*.bak
+*.swp
+
+# 未來可能加的東西
+/cases-screenshots/
+/client-data/
+/n8n-workflows/

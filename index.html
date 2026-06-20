@@ -1,0 +1,1729 @@
+﻿<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI商業成長 — 2026 AI 短劇革命｜免真人出鏡的接單系統</title>
+  <meta name="description" content="免演員、免外景、免貴貴的製片公司。AI 短劇 + 高防禦網站,讓你的業務自己跑起來。" />
+  <meta property="og:title" content="AI商業成長 — 2026 AI 影音革命" />
+  <meta property="og:description" content="免真人出鏡,打造 7 天可上線的接單系統" />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect x='3' y='3' width='26' height='26' rx='6' fill='%230B0B0F'/%3E%3Cpath d='M10 23 L16 10 L22 23 M12.5 19 L19.5 19' stroke='%23E5553D' stroke-width='2' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E" />
+  <!-- Plausible Analytics (上 Vercel 正式網域後取消註解並改 domain) -->
+  <!-- <script defer data-domain="aibizgrowth.com" src="https://plausible.io/js/script.js"></script> -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            // 底色 - 科技深黑
+            base:     '#0B0B0F',
+            surface:  '#14141A',
+            surface2: '#1A1A22',
+            line:     'rgba(255,255,255,0.08)',
+            // 文字
+            fg:       '#FFFFFF',
+            fgSoft:   '#B3B3B3',  // 內文霧銀灰
+            fgMute:   '#A8A29E',  // 註解 (已調亮)
+            // 品牌
+            brand:    '#E5553D',  // 磚紅
+            brandSoft:'#FF8B6B',
+            // 科技
+            ai:       '#00E5A5',  // 電氣薄荷
+            aiSoft:   '#7FFFCB',
+            // 高級
+            gold:     '#D4A574'
+          },
+          fontFamily: {
+            sans:  ['Inter', '"Noto Sans TC"', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+            serif: ['"Noto Serif TC"', 'Georgia', 'serif'],
+            mono:  ['"JetBrains Mono"', 'ui-monospace', 'monospace']
+          },
+          letterSpacing: {
+            'wide-1': '0.05em',
+            'wide-2': '0.1em'
+          },
+          animation: {
+            'fade-up':    'fadeUp 0.9s ease-out forwards',
+            'slow-spin':  'spin 30s linear infinite',
+            'marquee':    'marquee 40s linear infinite',
+            'breath':     'breath 3s ease-in-out infinite',
+            'gradient':   'gradient 8s ease infinite'
+          },
+          keyframes: {
+            fadeUp: { '0%': { opacity: 0, transform: 'translateY(20px)' }, '100%': { opacity: 1, transform: 'translateY(0)' } },
+            spin:   { '0%': { transform: 'rotate(0deg)' }, '100%': { transform: 'rotate(360deg)' } },
+            marquee:{ '0%': { transform: 'translateX(0)' }, '100%': { transform: 'translateX(-50%)' } },
+            breath: { '0%,100%': { opacity: 0.4 }, '50%': { opacity: 1 } },
+            gradient: { '0%,100%': { backgroundPosition: '0% 50%' }, '50%': { backgroundPosition: '100% 50%' } }
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Noto+Sans+TC:wght@300;400;500;700;900&family=Noto+Serif+TC:wght@500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <style>
+    html { scroll-behavior: smooth; }
+    body {
+      background: #0B0B0F;
+      color: #FFFFFF;
+      font-family: 'Inter', 'Noto Sans TC', sans-serif;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      font-feature-settings: "cv11", "ss01", "ss03";
+    }
+    /* 細網格背景 */
+    .grid-bg {
+      background-image:
+        linear-gradient(rgba(255,255,255,0.025) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.025) 1px, transparent 1px);
+      background-size: 64px 64px;
+    }
+    .grid-bg-soft {
+      background-image:
+        linear-gradient(rgba(255,255,255,0.015) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.015) 1px, transparent 1px);
+      background-size: 32px 32px;
+    }
+    /* 徑向漸層光暈 */
+    .glow-orb {
+      position: absolute;
+      width: 600px; height: 600px;
+      border-radius: 50%;
+      filter: blur(120px);
+      opacity: 0.18;
+      pointer-events: none;
+    }
+    /* 字型規範 */
+    .h1-display {
+      font-size: clamp(2.25rem, 5.5vw, 4.5rem);   /* 36px ~ 72px */
+      font-weight: 800;
+      line-height: 1.1;
+      letter-spacing: -0.02em;
+    }
+    .h1-hero {
+      font-size: clamp(2.5rem, 6.5vw, 5rem);      /* 40px ~ 80px */
+      font-weight: 800;
+      line-height: 1.05;
+      letter-spacing: -0.025em;
+    }
+    .h2-section {
+      font-size: clamp(1.75rem, 3.5vw, 2.75rem);  /* 28px ~ 44px */
+      font-weight: 700;
+      line-height: 1.2;
+      letter-spacing: -0.015em;
+    }
+    .h3-card {
+      font-size: 1.25rem;                          /* 20px */
+      font-weight: 600;
+      line-height: 1.3;
+    }
+    .body-lg {
+      font-size: 1.125rem;                         /* 18px */
+      line-height: 1.75;
+      color: #B3B3B3;
+    }
+    .body {
+      font-size: 1rem;                             /* 16px */
+      line-height: 1.7;
+      color: #B3B3B3;
+    }
+    .body-sm {
+      font-size: 0.875rem;                         /* 14px */
+      line-height: 1.65;
+      color: #B3B3B3;
+    }
+    .note {
+      font-size: 0.8125rem;                        /* 13px */
+      line-height: 1.6;
+      color: #D4D4D8;                              /* 調亮 (原本 #6B6B73 太暗) */
+      font-weight: 400;
+    }
+    .label {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: #6B6B73;
+    }
+    /* 漸層文字 */
+    .grad-text {
+      background: linear-gradient(135deg, #FF8B6B 0%, #E5553D 50%, #D4A574 100%);
+      -webkit-background-clip: text; background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .grad-ai {
+      background: linear-gradient(135deg, #00E5A5 0%, #7FFFCB 100%);
+      -webkit-background-clip: text; background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    /* 卡片 */
+    .card {
+      background: #14141A;
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 20px;
+      transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .card:hover {
+      border-color: rgba(255,255,255,0.15);
+      background: #1A1A22;
+      transform: translateY(-2px);
+    }
+    .card-featured {
+      background: linear-gradient(180deg, #1A1A22 0%, #14141A 100%);
+      border: 1px solid rgba(229, 85, 61, 0.4);
+      position: relative;
+    }
+    .card-featured::before {
+      content: ''; position: absolute; inset: -1px; border-radius: inherit;
+      padding: 1px;
+      background: linear-gradient(135deg, #E5553D 0%, transparent 50%, #D4A574 100%);
+      -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+      -webkit-mask-composite: xor; mask-composite: exclude;
+      pointer-events: none;
+    }
+    .card-featured:hover {
+      border-color: rgba(229, 85, 61, 0.7);
+      box-shadow: 0 24px 60px -20px rgba(229, 85, 61, 0.25);
+    }
+    /* 按鈕 */
+    .btn-primary {
+      background: #FFFFFF; color: #0B0B0F; padding: 14px 28px;
+      border-radius: 999px; font-weight: 600; letter-spacing: 0.01em;
+      transition: all 0.3s ease; display: inline-flex; align-items: center; gap: 8px;
+    }
+    .btn-primary:hover { background: #E5553D; color: #FFFFFF; transform: translateY(-1px); box-shadow: 0 12px 32px -8px rgba(229, 85, 61, 0.5); }
+    .btn-brand {
+      background: linear-gradient(135deg, #E5553D 0%, #D4A574 100%);
+      color: #0B0B0F; padding: 14px 28px; border-radius: 999px;
+      font-weight: 700; letter-spacing: 0.01em;
+      transition: all 0.3s ease; display: inline-flex; align-items: center; gap: 8px;
+    }
+    .btn-brand:hover { transform: translateY(-1px); box-shadow: 0 12px 32px -8px rgba(229, 85, 61, 0.4); }
+    .btn-ghost {
+      border: 1px solid rgba(255,255,255,0.15); color: #FFFFFF; padding: 14px 28px;
+      border-radius: 999px; font-weight: 500; transition: all 0.3s ease;
+      display: inline-flex; align-items: center; gap: 8px;
+    }
+    .btn-ghost:hover { border-color: #FFFFFF; background: rgba(255,255,255,0.05); }
+    /* Reveal */
+    [data-reveal] { opacity: 0; transform: translateY(20px); transition: opacity 0.9s ease, transform 0.9s ease; }
+    [data-reveal].in { opacity: 1; transform: translateY(0); }
+    /* Marquee */
+    .marquee-track { display: flex; gap: 4rem; width: max-content; }
+    /* 細分隔線 */
+    .hairline { height: 1px; background: linear-gradient(90deg, transparent, rgba(255,255,255,0.08) 20%, rgba(255,255,255,0.08) 80%, transparent); }
+    /* 價格表 */
+    .price-row { display: flex; justify-content: space-between; align-items: center; padding: 1rem 0; border-bottom: 1px solid rgba(255,255,255,0.06); }
+    .price-row:last-child { border-bottom: none; }
+
+    /* ============ CHAT WIDGET ============ */
+    .cw { position: fixed; bottom: 24px; right: 24px; z-index: 50; font-family: 'Inter', 'Noto Sans TC', sans-serif; }
+    .cw-trigger {
+      width: 60px; height: 60px; border-radius: 50%;
+      background: linear-gradient(135deg, #E5553D 0%, #D4A574 100%);
+      color: #0B0B0F; border: none; cursor: pointer;
+      display: flex; align-items: center; justify-content: center;
+      box-shadow: 0 12px 32px -8px rgba(229, 85, 61, 0.5);
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .cw-trigger:hover { transform: scale(1.08); }
+    .cw-trigger.hide { transform: scale(0); opacity: 0; pointer-events: none; }
+    .cw-trigger::after {
+      content: ''; position: absolute; inset: -4px; border-radius: 50%;
+      border: 2px solid #E5553D; opacity: 0.4;
+      animation: cw-pulse 2.5s ease-out infinite;
+    }
+    @keyframes cw-pulse {
+      0% { transform: scale(1); opacity: 0.4; }
+      100% { transform: scale(1.4); opacity: 0; }
+    }
+    .cw-window {
+      position: absolute; bottom: 76px; right: 0;
+      width: 380px; max-width: calc(100vw - 32px);
+      height: 560px; max-height: calc(100vh - 120px);
+      background: #14141A; border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 24px; overflow: hidden;
+      box-shadow: 0 32px 80px -16px rgba(0, 0, 0, 0.7);
+      display: flex; flex-direction: column;
+      transform: scale(0.85) translateY(20px); opacity: 0; pointer-events: none;
+      transform-origin: bottom right;
+      transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .cw-window.open { transform: scale(1) translateY(0); opacity: 1; pointer-events: auto; }
+    .cw-head {
+      padding: 16px 18px; border-bottom: 1px solid rgba(255,255,255,0.08);
+      display: flex; align-items: center; justify-content: space-between;
+      background: linear-gradient(180deg, #1A1A22 0%, #14141A 100%);
+    }
+    .cw-avatar {
+      width: 38px; height: 38px; border-radius: 50%;
+      background: linear-gradient(135deg, #E5553D 0%, #D4A574 100%);
+      display: flex; align-items: center; justify-content: center;
+      color: #0B0B0F; font-weight: 800; font-size: 15px; flex-shrink: 0;
+    }
+    .cw-avatar-sm { width: 28px; height: 28px; font-size: 11px; }
+    .cw-close {
+      width: 32px; height: 32px; border-radius: 50%;
+      background: rgba(255,255,255,0.05); border: none;
+      color: #B3B3B3; cursor: pointer;
+      display: flex; align-items: center; justify-content: center;
+      transition: all 0.2s;
+    }
+    .cw-close:hover { background: rgba(255,255,255,0.12); color: #fff; }
+    .cw-msgs {
+      flex: 1; overflow-y: auto; padding: 18px;
+      display: flex; flex-direction: column; gap: 10px;
+    }
+    .cw-msgs::-webkit-scrollbar { width: 4px; }
+    .cw-msgs::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.1); border-radius: 2px; }
+    .cw-msg { display: flex; gap: 8px; align-items: flex-end; }
+    .cw-msg.user { justify-content: flex-end; }
+    .cw-bubble {
+      padding: 10px 14px; border-radius: 18px;
+      font-size: 14px; line-height: 1.55; max-width: 78%;
+      word-break: break-word;
+    }
+    .cw-msg.bot .cw-bubble {
+      background: #1A1A22; color: #fff;
+      border-bottom-left-radius: 4px;
+    }
+    .cw-msg.user .cw-bubble {
+      background: linear-gradient(135deg, #E5553D 0%, #D4A574 100%);
+      color: #0B0B0F; font-weight: 500;
+      border-bottom-right-radius: 4px;
+    }
+    .cw-typing { display: flex; gap: 4px; padding: 12px 14px; }
+    .cw-typing span {
+      width: 6px; height: 6px; background: #6B6B73; border-radius: 50%;
+      animation: cw-dot 1.2s ease-in-out infinite;
+    }
+    .cw-typing span:nth-child(2) { animation-delay: 0.2s; }
+    .cw-typing span:nth-child(3) { animation-delay: 0.4s; }
+    @keyframes cw-dot { 0%, 60%, 100% { opacity: 0.3; transform: translateY(0); } 30% { opacity: 1; transform: translateY(-3px); } }
+    .cw-quick {
+      display: flex; flex-wrap: wrap; gap: 6px;
+      padding: 0 18px 12px;
+    }
+    .cw-qbtn {
+      padding: 7px 14px; border: 1px solid rgba(255,255,255,0.15);
+      background: transparent; color: #fff; font-size: 12px;
+      border-radius: 999px; cursor: pointer;
+      transition: all 0.2s; font-family: inherit;
+    }
+    .cw-qbtn:hover { border-color: #E5553D; color: #E5553D; background: rgba(229,85,61,0.08); }
+    .cw-input {
+      padding: 12px 14px; border-top: 1px solid rgba(255,255,255,0.08);
+      display: flex; gap: 8px; align-items: center;
+      background: #14141A;
+    }
+    .cw-text {
+      flex: 1; background: #1A1A22; border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 999px; padding: 10px 16px; color: #fff;
+      font-size: 14px; outline: none; font-family: inherit;
+      transition: border-color 0.2s;
+    }
+    .cw-text:focus { border-color: #E5553D; }
+    .cw-text::placeholder { color: #6B6B73; }
+    .cw-send {
+      width: 40px; height: 40px; border-radius: 50%;
+      background: #E5553D; border: none; color: #fff;
+      display: flex; align-items: center; justify-content: center;
+      cursor: pointer; transition: all 0.2s; flex-shrink: 0;
+    }
+    .cw-send:hover { background: #FF8B6B; transform: scale(1.05); }
+    .cw-send:disabled { background: #44403c; cursor: not-allowed; }
+    .cw-foot {
+      text-align: center; padding: 6px 0 10px;
+      font-size: 9px; color: #6B6B73; letter-spacing: 0.15em;
+      font-family: 'JetBrains Mono', monospace;
+      background: #14141A;
+    }
+    .cw-line {
+      background: #fff; padding: 12px; border-radius: 12px;
+      display: inline-block; margin: 4px 0;
+    }
+    .cw-line img { width: 160px; height: 160px; display: block; }
+    .cw-linebtn {
+      display: inline-flex; align-items: center; gap: 6px;
+      background: #06C755; color: #fff; padding: 9px 18px;
+      border-radius: 999px; font-size: 13px; font-weight: 600;
+      text-decoration: none; margin-top: 8px;
+      transition: all 0.2s;
+    }
+    .cw-linebtn:hover { background: #05B04B; transform: translateY(-1px); }
+    @media (max-width: 480px) {
+      .cw { bottom: 16px; right: 16px; }
+      .cw-window { width: calc(100vw - 32px); right: 0; }
+    }
+
+    /* ============ 10 步驟 SOP 亮色區 ============ */
+    .prod-section { background: #FAF7F2; position: relative; }
+    .prod-section::before {
+      content: ''; position: absolute; top: 0; left: 0; right: 0; height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.06) 50%, transparent);
+    }
+    .prod-header-line {
+      width: 40px; height: 2px; background: #E5553D; margin-bottom: 20px;
+    }
+    .prod-card {
+      background: #FFFFFF;
+      border: 1px solid #E7E2D8;
+      border-radius: 20px;
+      padding: 24px 22px 22px;
+      position: relative;
+      overflow: hidden;
+      transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+      height: 100%;
+    }
+    .prod-card::before {
+      content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px;
+      background: linear-gradient(90deg, #E5553D 0%, #D4A574 100%);
+      transform: scaleX(0); transform-origin: left;
+      transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .prod-card::after {
+      content: ''; position: absolute; top: 16px; right: 16px;
+      width: 32px; height: 32px; border-radius: 50%;
+      background: linear-gradient(135deg, rgba(229,85,61,0.08) 0%, rgba(212,165,116,0.08) 100%);
+      transition: all 0.4s;
+    }
+    .prod-card:hover {
+      border-color: #1C1917;
+      transform: translateY(-4px);
+      box-shadow: 0 20px 48px -16px rgba(28, 25, 23, 0.18);
+    }
+    .prod-card:hover::before { transform: scaleX(1); }
+    .prod-card:hover::after {
+      background: linear-gradient(135deg, rgba(229,85,61,0.15) 0%, rgba(212,165,116,0.15) 100%);
+      transform: scale(1.1);
+    }
+    .prod-num {
+      font-family: 'Noto Serif TC', serif;
+      font-size: 38px; font-weight: 700;
+      color: #E5553D;
+      line-height: 1; margin-bottom: 14px;
+      position: relative; z-index: 1;
+    }
+    .prod-icon {
+      position: absolute; top: 22px; right: 22px;
+      font-size: 20px; z-index: 1;
+      transition: transform 0.3s;
+    }
+    .prod-card:hover .prod-icon { transform: scale(1.15) rotate(-5deg); }
+    .prod-step {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 10px; font-weight: 500;
+      color: #A8A29E; letter-spacing: 0.18em;
+      margin-bottom: 8px;
+    }
+    .prod-title {
+      font-size: 18px; font-weight: 700;
+      color: #1C1917; line-height: 1.3;
+      margin-bottom: 10px;
+      font-family: 'Noto Sans TC', 'Inter', sans-serif;
+    }
+    .prod-desc {
+      font-size: 13px; line-height: 1.65;
+      color: #57534E; font-weight: 400;
+    }
+    .prod-pill {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: #FFFFFF;
+      border: 1px solid #E7E2D8;
+      padding: 9px 18px;
+      border-radius: 999px;
+      font-size: 12px; color: #1C1917;
+      font-weight: 500;
+      transition: all 0.3s;
+    }
+    .prod-pill:hover {
+      border-color: #1C1917;
+      transform: translateY(-1px);
+    }
+    .prod-pill .dot {
+      width: 7px; height: 7px; border-radius: 50%;
+    }
+  
+    /* ============ FAQ 新視覺 ============ */
+    .faq-section {
+      background: linear-gradient(180deg, #0B0B0F 0%, #0F0E14 50%, #0B0B0F 100%);
+      position: relative;
+    }
+    .faq-section::before, .faq-section::after {
+      content: '';
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 200px;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(229, 85, 61, 0.6), transparent);
+    }
+    .faq-section::before { top: 0; }
+    .faq-section::after { bottom: 0; }
+
+    .faq-card {
+      position: relative;
+      background: linear-gradient(135deg, #14141A 0%, #16161D 100%);
+      border: 1px solid rgba(255,255,255,0.06);
+      border-radius: 20px;
+      overflow: hidden;
+      transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+      --accent: #E5553D;
+      --accent-soft: rgba(229, 85, 61, 0.1);
+    }
+    .faq-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      width: 4px; height: 100%;
+      background: var(--accent);
+      transition: width 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .faq-card::after {
+      content: '';
+      position: absolute;
+      top: 0; right: 0;
+      width: 80px; height: 80px;
+      background: radial-gradient(circle at top right, var(--accent-soft) 0%, transparent 70%);
+      opacity: 0.6;
+      pointer-events: none;
+    }
+    .faq-card:hover {
+      border-color: var(--accent);
+      transform: translateY(-3px);
+      box-shadow: 0 16px 40px -12px rgba(0, 0, 0, 0.5);
+    }
+    .faq-card[open] {
+      border-color: var(--accent);
+      background: linear-gradient(135deg, #1A1A22 0%, #1F1F28 100%);
+      box-shadow: 0 20px 48px -16px rgba(0, 0, 0, 0.6);
+    }
+    .faq-card[open]::before { width: 6px; }
+
+    .faq-c1 { --accent: #E5553D; --accent-soft: rgba(229, 85, 61, 0.12); }
+    .faq-c2 { --accent: #00E5A5; --accent-soft: rgba(0, 229, 165, 0.12); }
+    .faq-c3 { --accent: #D4A574; --accent-soft: rgba(212, 165, 116, 0.12); }
+    .faq-c4 { --accent: #A78BFA; --accent-soft: rgba(167, 139, 250, 0.12); }
+
+    .faq-card summary {
+      padding: 22px 22px 22px 28px;
+      cursor: pointer;
+      list-style: none;
+      display: flex;
+      gap: 16px;
+      align-items: center;
+      position: relative;
+      z-index: 1;
+    }
+    .faq-card summary::-webkit-details-marker { display: none; }
+
+    .faq-num {
+      flex-shrink: 0;
+      width: 44px; height: 44px;
+      border-radius: 12px;
+      display: flex; align-items: center; justify-content: center;
+      font-weight: 700; font-size: 13px;
+      font-family: ''JetBrains Mono'', monospace;
+      letter-spacing: 0.05em;
+      background: var(--accent-soft);
+      color: var(--accent);
+      border: 1px solid currentColor;
+      transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .faq-card[open] .faq-num {
+      background: var(--accent);
+      color: #0B0B0F;
+      transform: rotate(-8deg) scale(1.05);
+    }
+
+    .faq-q-text {
+      flex: 1;
+      font-size: 16px;
+      font-weight: 700;
+      color: #fff;
+      line-height: 1.45;
+    }
+
+    .faq-toggle {
+      flex-shrink: 0;
+      width: 30px; height: 30px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.08);
+      display: flex; align-items: center; justify-content: center;
+      color: #B3B3B3;
+      font-size: 16px; font-weight: 300;
+      transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .faq-card:hover .faq-toggle {
+      background: var(--accent-soft);
+      color: var(--accent);
+      border-color: var(--accent);
+    }
+    .faq-card[open] .faq-toggle {
+      background: var(--accent);
+      color: #0B0B0F;
+      border-color: var(--accent);
+      transform: rotate(45deg);
+    }
+
+    .faq-a {
+      padding: 0 24px 22px 88px;
+      font-size: 14px;
+      line-height: 1.75;
+      color: #B3B3B3;
+      position: relative;
+      z-index: 1;
+    }
+    .faq-a strong {
+      color: var(--accent);
+      font-weight: 600;
+    }
+
+    @media (max-width: 768px) {
+      .faq-card summary { padding: 18px; gap: 12px; }
+      .faq-q-text { font-size: 15px; }
+      .faq-a { padding-left: 64px; padding-right: 18px; }
+      .faq-num { width: 38px; height: 38px; font-size: 12px; }
+    }
+  </style>
+</head>
+
+<body class="bg-base text-fg">
+
+  <!-- ============ NAV ============ -->
+  <nav class="fixed top-0 inset-x-0 z-50 backdrop-blur-md bg-base/80 border-b border-line">
+    <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+      <a href="#hero" class="flex items-center shrink-0">
+        <span class="serif font-bold text-xl md:text-2xl tracking-tight text-fg whitespace-nowrap">AI商業成長</span>
+      </a>
+      <div class="hidden md:flex items-center gap-9 text-sm text-fgSoft">
+        <a href="#services" class="hover:text-fg transition">做什麼</a>
+        <a href="#production" class="hover:text-fg transition">怎麼做</a>
+        <a href="#pricing" class="hover:text-fg transition">方案</a>
+        <a href="#cases" class="hover:text-fg transition">作品</a>
+      </div>
+      <a href="#cta" class="text-sm font-medium text-fg hover:text-brand transition flex items-center gap-1.5">
+        免費策略會 <span class="text-brand">→</span>
+      </a>
+    </div>
+  </nav>
+
+  <!-- ============ HERO ============ -->
+  <section id="hero" class="relative pt-28 pb-24 md:pt-40 md:pb-32 overflow-hidden">
+    <!-- 背景裝飾 -->
+    <div class="glow-orb bg-brand top-1/4 -left-32"></div>
+    <div class="glow-orb bg-ai bottom-1/4 -right-32"></div>
+    <div class="absolute inset-0 grid-bg-soft"></div>
+
+    <div class="relative max-w-6xl mx-auto px-6">
+      <!-- AI badge -->
+      <div class="inline-flex items-center gap-2 border border-line bg-surface/60 backdrop-blur rounded-full px-3.5 py-1.5 mb-10" data-reveal>
+        <span class="relative flex w-2 h-2">
+          <span class="absolute inset-0 rounded-full bg-ai animate-breath"></span>
+          <span class="relative inline-flex w-2 h-2 rounded-full bg-ai"></span>
+        </span>
+        <span class="label" style="color:#B3B3B3;">AI · 2026 ECOSYSTEM ONLINE</span>
+      </div>
+
+      <!-- H1 主標 -->
+      <h1 class="h1-hero font-black mb-8 max-w-5xl" data-reveal>
+        <span class="grad-text">AI 短劇 × 網站 × LINE</span><span class="text-fg">,</span><br />
+        <span class="text-fg">把流量變成</span>
+        <span class="grad-ai">預約與成交</span><span class="text-fg">。</span>
+      </h1>
+
+      <!-- 副標 -->
+      <p class="body-lg max-w-2xl mb-12" data-reveal>
+        <span class="text-fg font-medium">5 分鐘找出你的流量、成交與 LINE 漏斗問題</span>。<br />
+        我們協助 <span class="text-fg font-medium">房仲 · 醫美 · 美容 · 健身 · 餐飲</span>,<br />
+        透過 AI 短劇、網站、<span class="text-ai font-medium">LINE 自動客服</span> 與自動化系統,<br />
+        把進來的流量一個一個變成預約與成交。
+      </p>
+
+      <!-- CTA -->
+      <div class="flex flex-col sm:flex-row items-start sm:items-center gap-4 mb-16" data-reveal>
+        <a href="https://lin.ee/uXgDcE3" target="_blank" rel="noopener" class="btn-brand text-base px-7 py-4 shadow-2xl shadow-brand/30">
+          🔥 免費 AI 流量健檢 <span>→</span>
+        </a>
+        <a href="#pricing" class="btn-ghost text-sm">
+          看 3 種合作方案 <span>↓</span>
+        </a>
+      </div>
+
+      <!-- 副 CTA 連結列 -->
+      <div class="flex flex-wrap items-center gap-x-5 gap-y-2 text-xs text-fgMute mb-10" data-reveal>
+        <span class="text-fgSoft">還能免費領:</span>
+        <a href="https://lin.ee/uXgDcE3" target="_blank" rel="noopener" class="text-fg hover:text-brand transition">· 免費獲客診斷</a>
+        <a href="https://lin.ee/uXgDcE3" target="_blank" rel="noopener" class="text-fg hover:text-brand transition">· 免費競品分析</a>
+        <a href="https://lin.ee/uXgDcE3" target="_blank" rel="noopener" class="text-fg hover:text-brand transition">· 免費帳號健檢</a>
+      </div>
+
+      <!-- 4 大服務關鍵字 -->
+      <div class="flex flex-wrap items-center gap-x-6 gap-y-3 text-xs text-fgMute" data-reveal>
+        <span class="flex items-center gap-2"><span class="w-1 h-1 rounded-full bg-ai"></span>AI 短劇</span>
+        <span class="flex items-center gap-2"><span class="w-1 h-1 rounded-full bg-ai"></span>網站架設</span>
+        <span class="flex items-center gap-2"><span class="w-1 h-1 rounded-full bg-ai"></span>LINE OA</span>
+        <span class="flex items-center gap-2"><span class="w-1 h-1 rounded-full bg-ai"></span>AI 客服</span>
+        <span class="flex items-center gap-2"><span class="w-1 h-1 rounded-full bg-ai"></span>自動化系統</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="hairline max-w-6xl mx-auto"></div>
+
+  <!-- ============ MARQUEE ============ -->
+  <!-- ============ TRUST BAR ============ -->
+  <section class="py-8 border-y border-line bg-surface/30">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+        <div class="flex items-center gap-3" data-reveal>
+          <div class="w-10 h-10 rounded-xl bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center shrink-0">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"/><path d="M12 2a10 10 0 1 0 10 10 4 4 0 0 1-5-5 4 4 0 0 1-5-5"/></svg>
+          </div>
+          <div>
+            <div class="font-bold text-fg text-sm">30 天不滿意退 50%</div>
+            <div class="text-xs text-fgMute">訂閱保證</div>
+          </div>
+        </div>
+        <div class="flex items-center gap-3" data-reveal>
+          <div class="w-10 h-10 rounded-xl bg-ai/10 border border-ai/30 flex items-center justify-center shrink-0">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#00E5A5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          </div>
+          <div>
+            <div class="font-bold text-fg text-sm">隨時可停約</div>
+            <div class="text-xs text-fgMute">不綁月、單月可停</div>
+          </div>
+        </div>
+        <div class="flex items-center gap-3" data-reveal>
+          <div class="w-10 h-10 rounded-xl bg-gold/10 border border-gold/30 flex items-center justify-center shrink-0">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#D4A574" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <div>
+            <div class="font-bold text-fg text-sm">7 天首批交付</div>
+            <div class="text-xs text-fgMute">急件 +NT$1,000</div>
+          </div>
+        </div>
+        <div class="flex items-center gap-3" data-reveal>
+          <div class="w-10 h-10 rounded-xl bg-brand/10 border border-brand/30 flex items-center justify-center shrink-0">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#E5553D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+          </div>
+          <div>
+            <div class="font-bold text-fg text-sm">短劇 + 網站一條龍</div>
+            <div class="text-xs text-fgMute">不用找兩家</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="hairline max-w-6xl mx-auto"></div>
+
+  <!-- ============ 3 SERVICES ============ -->
+  <section id="services" class="py-24 md:py-32">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-12 mb-20">
+        <div class="md:col-span-5" data-reveal>
+          <div class="label mb-4">— 01 / 我們做什麼</div>
+          <h2 class="h2-section">
+            兩件事，<br />
+            幫你把業務<br />
+            <span class="grad-text">跑起來</span>。
+          </h2>
+        </div>
+        <div class="md:col-span-6 md:col-start-7" data-reveal>
+          <p class="body-lg">不是給你一堆建議或工具清單。我們做的事情比較具體 — 從一支短劇、一條工作流、一張策略書開始，做到能收單、能複製、能自己跑。</p>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-5 max-w-4xl mx-auto">
+        <div class="card p-8" data-reveal>
+          <div class="text-4xl mb-6">🎬</div>
+          <div class="label mb-3">A · 短劇製作</div>
+          <h3 class="h3-card mb-3">7 天，讓客戶開始注意到你</h3>
+          <p class="body-sm mb-6">從 15 秒的抖音短劇到 90 秒的 YouTube 長片，腳本到上線一條龍。免演員、免外景、免貴貴的製片公司。</p>
+          <p class="note italic">單支 NT$ 3,000 起 · 含完整 10 步 SOP</p>
+        </div>
+
+        <div class="card p-8" data-reveal>
+          <div class="text-4xl mb-6">🌐</div>
+          <div class="label mb-3">B · 網頁架站</div>
+          <h3 class="h3-card mb-3">蓋一個 24 小時幫你收錢的網站</h3>
+          <p class="body-sm mb-6">一頁式電商、品牌官網、Landing Page 都有做。從設計、金流、主機到維護，一條龍到位。</p>
+          <p class="note italic">從 NT$ 5 萬 / 頁起 · 含首年主機、網域、資安</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 為什麼選我們 ============ -->
+  <section id="why" class="py-24 md:py-32">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="label mb-6" data-reveal>— 02 / 為什麼選我們</div>
+      <h2 class="h2-section mb-6 max-w-3xl" data-reveal>不選別家，選我們的<br /><span class="grad-text">3 個理由</span>。</h2>
+      <p class="body max-w-2xl mb-16" data-reveal>市場上 AI 短劇工作室很多，但多數只交素材、不管成效。我們不一樣。</p>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+        <div class="card p-7" data-reveal>
+          <div class="text-4xl mb-5">🎯</div>
+          <h3 class="font-bold text-lg mb-3">做到上線才算數</h3>
+          <p class="body-sm leading-relaxed">別家交素材就收尾。我們交付後還會追蹤 30 / 60 / 90 天的觸及、轉換、成交。沒達標就調整，絕不裝死。</p>
+        </div>
+
+        <div class="card p-7" data-reveal>
+          <div class="text-4xl mb-5">🤝</div>
+          <h3 class="font-bold text-lg mb-3">真人 + AI 混合</h3>
+          <p class="body-sm leading-relaxed">別家 100% AI 罐頭，沒溫度。我們 AI 做 90% 執行，但策略、最後 10% 品質把關、人與人的溝通，都是真人。</p>
+        </div>
+
+        <div class="card p-7" data-reveal>
+          <div class="text-4xl mb-5">🔗</div>
+          <h3 class="font-bold text-lg mb-3">一條龍，不找兩家</h3>
+          <p class="body-sm leading-relaxed">別家短劇歸短劇、網站歸網站，你要找兩家配合。我們一家搞定，溝通成本少 50%，風格也一致。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 故事 ============ -->
+  <section id="story" class="py-24 md:py-32 grid-bg">
+    <div class="max-w-4xl mx-auto px-6">
+      <div class="label mb-6" data-reveal>— 03 / 為什麼是我</div>
+      <div class="h2-section mb-12" data-reveal>
+        在開始接案之前，<br />
+        我們也是<span class="grad-text">一人公司</span>。<br />
+        凌晨三點回訊息、發票自己開、合約自己擬，<br />
+        連休息都在想工作。
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12" data-reveal>
+        <p class="body">把瑣碎的事交給 AI，我們才有時間做真正重要的事 — 把<em class="text-fg not-italic font-medium">你的</em>業務，變成自己跑得起來的系統。</p>
+        <p class="body">AI商業成長由一人公司起家。沒有大公司光環、沒有 MBA，只有一個人、一台電腦、和一群被我們服務過的客戶。每一個合作，都當成自己公司的事來做。</p>
+      </div>
+      <div class="mt-12 flex items-center gap-4" data-reveal>
+        <div class="w-12 h-12 rounded-full bg-brand text-fg flex items-center justify-center">
+          <svg width="20" height="20" viewBox="0 0 32 32" fill="none">
+            <path d="M10 23 L16 10 L22 23 M12.5 19 L19.5 19" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="16" cy="22" r="1.2" fill="currentColor"/>
+          </svg>
+        </div>
+        <div>
+          <div class="font-bold">AI商業成長工作室</div>
+          <div class="text-xs text-fgMute">一人公司起家 · 專注產業顧問</div>
+        </div>
+        <div class="ml-auto hidden md:block">
+          <div class="label">UPDATED · 2026.06</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 10 步驟 SOP (亮色區) ============ -->
+  <section id="production" class="prod-section py-24 md:py-32">
+    <div class="max-w-6xl mx-auto px-6">
+      <!-- Header -->
+      <div class="mb-14" data-reveal>
+        <div class="prod-header-line"></div>
+        <div class="label mb-5" style="color:#78716C;">— 04 / 怎麼做一支短劇</div>
+        <h2 class="h2-section mb-5 max-w-3xl" style="color:#1C1917;">
+          十個步驟，<br />
+          <span class="grad-text">從零到交片</span>，一條龍。
+        </h2>
+        <p style="color:#57534E;font-size:1rem;line-height:1.75;max-width:42rem;">我們做的不是片段，是整支可以上線的影片。從第一次對話開始，到改到你滿意為止，十個步驟全程參與。</p>
+      </div>
+
+      <!-- 10 步驟卡片 -->
+      <div class="grid grid-cols-2 md:grid-cols-5 gap-4 md:gap-5">
+        <div class="prod-card" data-reveal>
+          <div class="prod-num">壹</div>
+          <div class="prod-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#E5553D" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
+          <div class="prod-step">STEP 01</div>
+          <div class="prod-title">需求訪談</div>
+          <div class="prod-desc">聊產品、客戶、目標，找出最重要的切入點</div>
+        </div>
+
+        <div class="prod-card" data-reveal>
+          <div class="prod-num">貳</div>
+          <div class="prod-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#00E5A5" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6 M10 22h4 M12 2a7 7 0 0 0-4 12.7c.6.5 1 1.2 1 2v.3h6v-.3c0-.8.4-1.5 1-2A7 7 0 0 0 12 2z"/></svg></div>
+          <div class="prod-step">STEP 02</div>
+          <div class="prod-title">主題企劃</div>
+          <div class="prod-desc">想 5-10 個角度，選最準的那一個</div>
+        </div>
+
+        <div class="prod-card" data-reveal>
+          <div class="prod-num">參</div>
+          <div class="prod-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#D4A574" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="9" y1="13" x2="15" y2="13"/><line x1="9" y1="17" x2="13" y2="17"/></svg></div>
+          <div class="prod-step">STEP 03</div>
+          <div class="prod-title">腳本 / 分鏡</div>
+          <div class="prod-desc">逐字稿、分鏡表、定調一次到位</div>
+        </div>
+
+        <div class="prod-card" data-reveal>
+          <div class="prod-num">肆</div>
+          <div class="prod-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#A78BFA" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg></div>
+          <div class="prod-step">STEP 04</div>
+          <div class="prod-title">AI 素材生成</div>
+          <div class="prod-desc">文字轉影片、生成場景、產圖產片</div>
+        </div>
+
+        <div class="prod-card" data-reveal>
+          <div class="prod-num">伍</div>
+          <div class="prod-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FF8B6B" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2 M12 19v4 M8 23h8"/></svg></div>
+          <div class="prod-step">STEP 05</div>
+          <div class="prod-title">AI 配音</div>
+          <div class="prod-desc">多語、情緒、節奏都可控</div>
+        </div>
+
+        <div class="prod-card" data-reveal>
+          <div class="prod-num">陸</div>
+          <div class="prod-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#7FFFCB" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><line x1="6" y1="12" x2="14" y2="12"/><line x1="6" y1="16" x2="11" y2="16"/></svg></div>
+          <div class="prod-step">STEP 06</div>
+          <div class="prod-title">字幕</div>
+          <div class="prod-desc">繁中、字型、樣式客製化</div>
+        </div>
+
+        <div class="prod-card" data-reveal>
+          <div class="prod-num">柒</div>
+          <div class="prod-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#7C3AED" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg></div>
+          <div class="prod-step">STEP 07</div>
+          <div class="prod-title">音樂</div>
+          <div class="prod-desc">挑授權曲目或 AI 生成，符合情緒</div>
+        </div>
+
+        <div class="prod-card" data-reveal>
+          <div class="prod-num">捌</div>
+          <div class="prod-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><line x1="20" y1="4" x2="8.12" y2="15.88"/><line x1="14.47" y1="14.48" x2="20" y2="20"/><line x1="8.12" y1="8.12" x2="12" y2="12"/></svg></div>
+          <div class="prod-step">STEP 08</div>
+          <div class="prod-title">剪輯合成</div>
+          <div class="prod-desc">節奏、轉場、特效、混音一次到位</div>
+        </div>
+
+        <div class="prod-card" data-reveal>
+          <div class="prod-num">玖</div>
+          <div class="prod-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#E5553D" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg></div>
+          <div class="prod-step">STEP 09</div>
+          <div class="prod-title">成品交付</div>
+          <div class="prod-desc">多版本、多平台規格一次給齊</div>
+        </div>
+
+        <div class="prod-card" data-reveal>
+          <div class="prod-num">拾</div>
+          <div class="prod-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#00E5A5" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 4 23 10 17 10"/><polyline points="1 20 1 14 7 14"/><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10 M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/></svg></div>
+          <div class="prod-step">STEP 10</div>
+          <div class="prod-title">修改</div>
+          <div class="prod-desc">收到反饋，改到滿意才結案</div>
+        </div>
+      </div>
+
+      <!-- Bottom 值宣言 -->
+      <div class="mt-12 flex flex-wrap items-center justify-center gap-3" data-reveal>
+        <span class="prod-pill">
+          <span class="dot" style="background:#00B86B;"></span>
+          10 步全程參與
+        </span>
+        <span class="prod-pill">
+          <span class="dot" style="background:#E5553D;"></span>
+          不外包
+        </span>
+        <span class="prod-pill">
+          <span class="dot" style="background:#D4A574;"></span>
+          不省步驟
+        </span>
+        <span class="prod-pill">
+          <span class="dot" style="background:#7C3AED;"></span>
+          不收中途加價
+        </span>
+      </div>
+    </div>
+  </section>
+
+  <section id="pricing" class="py-24 md:py-32 grid-bg">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="label mb-6" data-reveal>— 05 / 怎麼合作</div>
+      <h2 class="h2-section mb-4 max-w-3xl" data-reveal">三種合作方式，<br /><span class="grad-text">訂閱、一條龍、客製</span>，自由選。</h2>
+      <p class="body max-w-2xl mb-8" data-reveal>月度訂閱養流量、一條龍一次到位、客製化完全照你需求。從 3,000 元起,任何預算都接得住。</p>
+
+      <!-- 4 條保證 -->
+      <div class="flex flex-wrap items-center gap-3 mb-3" data-reveal>
+        <span class="inline-flex items-center gap-2 px-4 py-2 bg-surface border border-line rounded-full text-sm text-fgSoft">
+          <span class="w-1.5 h-1.5 bg-emerald-400 rounded-full"></span> 30 天不滿意退 50%
+        </span>
+        <span class="inline-flex items-center gap-2 px-4 py-2 bg-surface border border-line rounded-full text-sm text-fgSoft">
+          <span class="w-1.5 h-1.5 bg-emerald-400 rounded-full"></span> 隨時可停約
+        </span>
+        <span class="inline-flex items-center gap-2 px-4 py-2 bg-surface border border-line rounded-full text-sm text-fgSoft">
+          <span class="w-1.5 h-1.5 bg-emerald-400 rounded-full"></span> 不收隱藏費
+        </span>
+        <span class="inline-flex items-center gap-2 px-4 py-2 bg-surface border border-line rounded-full text-sm text-fgSoft">
+          <span class="w-1.5 h-1.5 bg-emerald-400 rounded-full"></span> 報價透明
+        </span>
+      </div>
+      <p class="note mb-12 max-w-3xl" data-reveal><strong class="text-fgSoft">時程說明</strong>:上述「X 天內交付」為<strong>單支短劇</strong>的製作時間。完整方案首波上線的時程,請參考下方「06 怎麼進行」(D14 首批上線、D30 成效檢討)。</p>
+
+      <!-- ============ 三階定價(Value Ladder)============ -->
+      <div class="mb-12" data-reveal>
+        <div class="flex items-baseline gap-3 mb-2">
+          <span class="label" style="color:#00E5A5;">3 階合作方案</span>
+          <span class="text-fgMute text-sm">/</span>
+          <span class="text-fg font-medium">從試水溫到全託管,3 步到頂</span>
+        </div>
+        <p class="body-sm mb-8">8,800 元先試 → 28,000 元建站 → 95,000 元交給你全做。<strong class="text-fg">多數客戶從第 1 階走到第 3 階</strong>。</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-5 mb-10">
+
+        <!-- ============ 階梯 1:AI 短劇啟動方案 NT$ 8,800 ============ -->
+        <div class="card p-7 flex flex-col" data-reveal>
+          <div class="flex items-baseline justify-between mb-3">
+            <div class="text-xs text-fgMute font-medium">階梯 1 · 啟動</div>
+            <span class="label">Front</span>
+          </div>
+          <h3 class="font-bold text-lg mb-2">AI 短劇 - 啟動方案</h3>
+          <div class="flex items-baseline gap-1 mb-1">
+            <div class="text-4xl font-black">8,800</div>
+            <div class="text-fgMute text-sm">元起 / 案</div>
+          </div>
+          <p class="text-xs text-fgMute mb-5">3 支 AI 短劇 · 15-30 秒 · 含腳本 + 分鏡</p>
+          <hr class="border-line mb-5" />
+          <div class="text-xs text-fgMute mb-3">適合:</div>
+          <ul class="space-y-1.5 text-sm text-fgSoft mb-5">
+            <li>· 房仲 / 醫美 / 美容 / 健身 / 餐飲</li>
+            <li>· 想開始經營短影音</li>
+            <li>· 想先試水溫</li>
+          </ul>
+          <div class="text-xs text-fgMute mb-2">包含:</div>
+          <ul class="space-y-2 mb-5 text-sm text-fgSoft">
+            <li class="flex gap-2"><span class="text-ai shrink-0">✓</span><span>爆款腳本 (3 支)</span></li>
+            <li class="flex gap-2"><span class="text-ai shrink-0">✓</span><span>分鏡規劃</span></li>
+            <li class="flex gap-2"><span class="text-ai shrink-0">✓</span><span>AI 人物設定 Prompt</span></li>
+            <li class="flex gap-2"><span class="text-ai shrink-0">✓</span><span>配音建議稿</span></li>
+            <li class="flex gap-2"><span class="text-ai shrink-0">✓</span><span>剪輯規劃書</span></li>
+            <li class="flex gap-2"><span class="text-ai shrink-0">✓</span><span>發布建議 (平台 / 時段 / Hashtag)</span></li>
+          </ul>
+          <p class="text-xs text-fgMute italic mb-5">👉 幫助你開始經營短影音</p>
+          <a href="https://lin.ee/uXgDcE3" target="_blank" rel="noopener" class="btn-ghost w-full justify-center text-sm mt-auto">
+            從 8,800 開始 →
+          </a>
+        </div>
+
+        <!-- ============ 階梯 2:AI 獲客系統 NT$ 28,000 起 ============ -->
+        <div class="card card-featured p-7 relative flex flex-col" data-reveal>
+          <div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-paper text-ink text-[10px] mono tracking-widest px-3 py-1 rounded-full border border-ink whitespace-nowrap">最受歡迎</div>
+          <div class="flex items-baseline justify-between mb-3">
+            <div class="text-xs text-gold font-medium">階梯 2 · 主力成交</div>
+            <span class="label text-fgMute/60">Core</span>
+          </div>
+          <h3 class="font-bold text-lg mb-2">AI 獲客系統</h3>
+          <div class="flex items-baseline gap-1 mb-1">
+            <div class="text-4xl font-black grad-text">28,000</div>
+            <div class="text-fgMute text-sm">元起 / 案</div>
+          </div>
+          <p class="text-xs text-fgMute mb-5">成交型網站 + LINE OA + 預約表單 + 名單收集 + 基礎自動化</p>
+          <hr class="border-line mb-5" />
+          <div class="text-xs text-fgMute mb-3">適合:</div>
+          <ul class="space-y-1.5 text-sm text-fgSoft mb-5">
+            <li>· 已有短劇經驗,想把流量變預約</li>
+            <li>· 想做品牌官網</li>
+            <li>· 想建立 LINE 自動客服</li>
+          </ul>
+          <div class="text-xs text-fgMute mb-2">包含:</div>
+          <ul class="space-y-2 mb-5 text-sm text-fgSoft">
+            <li class="flex gap-2"><span class="text-ai shrink-0">✓</span><span>成交型網站 (1 頁式)</span></li>
+            <li class="flex gap-2"><span class="text-ai shrink-0">✓</span><span>LINE OA 設定</span></li>
+            <li class="flex gap-2"><span class="text-ai shrink-0">✓</span><span>預約表單</span></li>
+            <li class="flex gap-2"><span class="text-ai shrink-0">✓</span><span>名單收集機制</span></li>
+            <li class="flex gap-2"><span class="text-ai shrink-0">✓</span><span>基礎自動化 (歡迎訊息 + 標籤)</span></li>
+            <li class="flex gap-2"><span class="text-ai shrink-0">✓</span><span>14 天交付</span></li>
+          </ul>
+          <p class="text-xs text-fgMute italic mb-5">👉 幫助流量變預約</p>
+          <a href="https://lin.ee/uXgDcE3" target="_blank" rel="noopener" class="btn-brand w-full justify-center text-sm mt-auto">
+            從 28,000 建站 →
+          </a>
+        </div>
+
+        <!-- ============ 階梯 3:一條龍獲客系統 NT$ 95,000 起 ============ -->
+        <div class="card p-7 flex flex-col" data-reveal>
+          <div class="flex items-baseline justify-between mb-3">
+            <div class="text-xs text-ai font-medium">階梯 3 · 全託管</div>
+            <span class="label">Full</span>
+          </div>
+          <h3 class="font-bold text-lg mb-2">一條龍獲客系統</h3>
+          <div class="flex items-baseline gap-1 mb-1">
+            <div class="text-4xl font-black">95,000</div>
+            <div class="text-fgMute text-sm">元起 / 案</div>
+          </div>
+          <p class="text-xs text-fgMute mb-5">AI 短劇 + 網站 + LINE + AI 客服 + CRM + 自動化</p>
+          <hr class="border-line mb-5" />
+          <div class="text-xs text-fgMute mb-3">適合:</div>
+          <ul class="space-y-1.5 text-sm text-fgSoft mb-5">
+            <li>· 想全部交給專業做</li>
+            <li>· 想建完整獲客閉環</li>
+            <li>· 中大型品牌</li>
+          </ul>
+          <div class="text-xs text-fgMute mb-2">包含:</div>
+          <ul class="space-y-2 mb-5 text-sm text-fgSoft">
+            <li class="flex gap-2"><span class="text-ai shrink-0">✓</span><span>AI 短劇 (8-15 支)</span></li>
+            <li class="flex gap-2"><span class="text-ai shrink-0">✓</span><span>全客製網站</span></li>
+            <li class="flex gap-2"><span class="text-ai shrink-0">✓</span><span>LINE OA + AI 客服</span></li>
+            <li class="flex gap-2"><span class="text-ai shrink-0">✓</span><span>CRM 客戶管理</span></li>
+            <li class="flex gap-2"><span class="text-ai shrink-0">✓</span><span>完整自動化流程</span></li>
+            <li class="flex gap-2"><span class="text-ai shrink-0">✓</span><span>30-45 天交付</span></li>
+          </ul>
+          <p class="text-xs text-fgMute italic mb-5">👉 幫助建立完整獲客系統</p>
+          <a href="https://lin.ee/uXgDcE3" target="_blank" rel="noopener" class="btn-ghost w-full justify-center text-sm mt-auto">
+            從 95,000 全託管 →
+          </a>
+        </div>
+      </div>
+
+      <!-- 升級路徑提示 -->
+      <div class="card p-6 mb-16" data-reveal style="border-color:#D4A574;border-style:dashed;">
+        <div class="flex items-start gap-4 flex-col md:flex-row">
+          <div class="text-3xl shrink-0">💡</div>
+          <div class="flex-1">
+            <div class="font-bold text-gold mb-2">升級路徑(Value Ladder)</div>
+            <div class="text-sm text-fgSoft mb-3">多數客戶從 8,800 啟動包開始 → 看到短劇有效後升級到 28,000 系統建置 → 最後升級到 95,000 全託管。</div>
+            <div class="flex flex-wrap gap-3 text-xs">
+              <span class="px-3 py-1.5 rounded-full bg-surface border border-line text-fgMute">8,800 啟動 (引流)</span>
+              <span class="text-brand">→</span>
+              <span class="px-3 py-1.5 rounded-full bg-surface border border-line text-fgMute">28,000 系統 (主力)</span>
+              <span class="text-brand">→</span>
+              <span class="px-3 py-1.5 rounded-full bg-surface border border-line text-fgMute">95,000 全託管 (利潤)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 加購價格 -->
+      <div class="mb-12">
+        <div class="flex items-baseline gap-3 mb-4" data-reveal>
+          <span class="label" style="color:#D4A574;">加購 · 透明計價</span>
+          <span class="text-fgMute text-sm">/</span>
+          <span class="text-fg font-medium">需要再加 · 不綁包套</span>
+        </div>
+        <div class="card p-6" data-reveal>
+          <div class="space-y-px">
+            <div class="flex items-center justify-between py-4 border-b border-line">
+              <div>
+                <div class="font-bold mb-1">加購短劇</div>
+                <div class="note">訂閱客戶專屬 · 短劇加購 9 折</div>
+              </div>
+              <div class="text-right shrink-0 ml-6">
+                <div class="font-bold text-lg">4,000 - 5,000</div>
+                <div class="note">元 / 支</div>
+              </div>
+            </div>
+            <div class="flex items-center justify-between py-4 border-b border-line">
+              <div>
+                <div class="font-bold mb-1">加購頁面</div>
+                <div class="note">含設計 + 後台串接</div>
+              </div>
+              <div class="text-right shrink-0 ml-6">
+                <div class="font-bold text-lg">15,000</div>
+                <div class="note">元 / 頁</div>
+              </div>
+            </div>
+            <div class="flex items-center justify-between py-4 border-b border-line">
+              <div>
+                <div class="font-bold mb-1">加購自動化</div>
+                <div class="note">預約 / 跟單 / 表單 / 提醒</div>
+              </div>
+              <div class="text-right shrink-0 ml-6">
+                <div class="font-bold text-lg">5,000</div>
+                <div class="note">元 / 條</div>
+              </div>
+            </div>
+            <div class="flex items-center justify-between py-4">
+              <div>
+                <div class="font-bold mb-1">改版 / 重新設計</div>
+                <div class="note">需求複雜,報價另議</div>
+              </div>
+              <div class="text-right shrink-0 ml-6">
+                <div class="font-bold text-lg">報價另議</div>
+                <div class="note">看規模</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 客製化服務 -->
+      <div>
+        <div class="flex items-baseline gap-3 mb-4" data-reveal>
+          <span class="label" style="color:#7C3AED;">專屬客製化</span>
+          <span class="text-fgMute text-sm">/</span>
+          <span class="text-fg font-medium">完全照你需求 · 預約制</span>
+        </div>
+        <p class="body-sm mb-8" data-reveal>上市發表、跨界聯名、複雜業務邏輯、特殊檔期 — 用預約制談。</p>
+
+        <div class="card p-8" data-reveal>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-7">
+            <div>
+              <div class="text-3xl mb-3">⚡</div>
+              <div class="font-bold mb-1">全客製腳本</div>
+              <div class="text-sm text-fgSoft leading-relaxed">從市場調研到腳本撰寫,完全為你量身打造</div>
+            </div>
+            <div>
+              <div class="text-3xl mb-3">🌐</div>
+              <div class="font-bold mb-1">多功能品牌網站</div>
+              <div class="text-sm text-fgSoft leading-relaxed">多頁式、會員系統、金流、CRM 串接</div>
+            </div>
+            <div>
+              <div class="text-3xl mb-3">🤖</div>
+              <div class="font-bold mb-1">AI 品牌代言人</div>
+              <div class="text-sm text-fgSoft leading-relaxed">虛擬人物 IP 長期合作(月費制,不買斷)</div>
+            </div>
+          </div>
+          <div class="border-t border-line pt-6 text-center">
+            <div class="label mb-3">客製化服務 · 預約制報價</div>
+            <div class="text-3xl font-black mb-5">NT$ 50,000 <span class="text-base text-fgMute font-normal">起 / 案</span></div>
+            <a href="https://lin.ee/uXgDcE3" target="_blank" rel="noopener" class="btn-brand">免費獲客診斷</a>
+          </div>
+        </div>
+      </div>
+
+      <p class="text-center note mt-12" data-reveal>訂閱月繳、隨時可停 · 30 天內不滿意退 50% · 報價透明無隱藏費 · 成交後再開立發票</p>
+      <p class="text-center text-xs text-fgMute/70 mt-4" data-reveal>* 以上價格僅供參考,實際費用依專家報價為準</p>
+    </div>
+  </section><!-- ============ PROCESS ============ -->
+  <section id="process" class="py-24 md:py-32">
+    <div class="max-w-5xl mx-auto px-6">
+      <div class="label mb-6" data-reveal>— 06 / 怎麼進行</div>
+      <h2 class="h2-section mb-6 max-w-2xl" data-reveal>
+        五步，<br />
+        慢慢來，<br />
+        <span class="grad-text">走得穩</span>。
+      </h2>
+      <p class="body max-w-xl mb-20" data-reveal>不催你，陪你把每一步走好。每一步都有交付物，都看得到、摸得到、用得到。</p>
+
+      <div class="space-y-px">
+        <div class="bg-surface border border-line rounded-2xl p-7 grid grid-cols-1 md:grid-cols-12 gap-6 items-center" data-reveal>
+          <div class="md:col-span-1 serif text-3xl text-brand">壹</div>
+          <div class="md:col-span-3">
+            <div class="font-bold text-xl mb-1">免費 30 分鐘</div>
+            <div class="label">D0</div>
+          </div>
+          <div class="md:col-span-8 body">我們聊聊你現在的業務長什麼樣，卡在哪裡。聊完，你會更清楚下一步怎麼走。值得做才開始，不適合我直接告訴你。</div>
+        </div>
+
+        <div class="bg-surface border border-line rounded-2xl p-7 grid grid-cols-1 md:grid-cols-12 gap-6 items-center" data-reveal>
+          <div class="md:col-span-1 serif text-3xl text-brand">貳</div>
+          <div class="md:col-span-3">
+            <div class="font-bold text-xl mb-1">策略書</div>
+            <div class="label">D7</div>
+          </div>
+          <div class="md:col-span-8 body">白紙黑字寫下：你的現況、要做的事、時間表、預期成效。你審過，我們才動工。</div>
+        </div>
+
+        <div class="bg-surface border border-line rounded-2xl p-7 grid grid-cols-1 md:grid-cols-12 gap-6 items-center" data-reveal>
+          <div class="md:col-span-1 serif text-3xl text-brand">參</div>
+          <div class="md:col-span-3">
+            <div class="font-bold text-xl mb-1">首批上線</div>
+            <div class="label">D14</div>
+          </div>
+          <div class="md:col-span-8 body">3 支短劇 + Landing Page，真的上線、真的能收單、真的能跑。</div>
+        </div>
+
+        <div class="bg-surface border border-line rounded-2xl p-7 grid grid-cols-1 md:grid-cols-12 gap-6 items-center" data-reveal>
+          <div class="md:col-span-1 serif text-3xl text-brand">肆</div>
+          <div class="md:col-span-3">
+            <div class="font-bold text-xl mb-1">成效檢討</div>
+            <div class="label">D30</div>
+          </div>
+          <div class="md:col-span-8 body">用數字說話：觸及、轉換、名單、成交。沒達標就聊怎麼調整，絕不裝死。</div>
+        </div>
+
+        <div class="bg-surface border border-line rounded-2xl p-7 grid grid-cols-1 md:grid-cols-12 gap-6 items-center" data-reveal>
+          <div class="md:col-span-1 serif text-3xl text-brand">伍</div>
+          <div class="md:col-span-3">
+            <div class="font-bold text-xl mb-1">持續優化</div>
+            <div class="label">D30 +</div>
+          </div>
+          <div class="md:col-span-8 body">A/B 測試、腳本迭代、流程擴展。目標是 — 把單一支做爆，不是平均做好。</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CASES (作品展示) ============ -->
+  <section id="cases" class="py-24 md:py-32 grid-bg">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="label mb-6" data-reveal>— 07 / 作品展示</div>
+      <h2 class="h2-section mb-5 max-w-3xl" data-reveal>AI 短劇作品展示，<br /><span class="grad-text">4 種產業 × 4 種風格</span>。</h2>
+      <p class="body max-w-2xl mb-10" data-reveal>以下為我們製作的 <strong class="text-fg">概念示範</strong>,展示不同產業、不同風格 AI 短劇能達到的品質與氛圍。實際合作後會依客戶產業、產品、TA 客製化調整,並提供真實投放數據。</p>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+
+        <!-- Case 01: 房仲 -->
+        <article class="card overflow-hidden relative" data-reveal>
+          <div class="absolute top-3 right-3 z-10">
+            <span class="label bg-paper text-ink text-[10px] tracking-widest px-2.5 py-1 rounded-full border border-ink">作品展示</span>
+          </div>
+          <div class="aspect-[4/3] bg-gradient-to-br from-brand/35 via-surface to-ai/20 flex items-center justify-center relative">
+            <div class="text-8xl">🏠</div>
+            <div class="absolute top-3 left-3 flex items-center gap-2">
+              <span class="label bg-base/80 px-2.5 py-1 rounded-full border border-line">15s</span>
+              <span class="label bg-base/80 px-2.5 py-1 rounded-full border border-line">挑釁式</span>
+            </div>
+          </div>
+          <div class="p-6">
+            <div class="flex items-center gap-2 mb-3">
+              <span class="text-xs label text-brand">CASE 01 · 房仲</span>
+            </div>
+            <h3 class="font-bold text-lg mb-2">「3 個月賣不掉」</h3>
+            <p class="body-sm mb-4 leading-relaxed">屋主困境開場 + 對比畫面 + LINE 預約帶看。挑釁式 hook 在 3 秒抓住屋主目光,直擊賣房焦慮。</p>
+            <div class="flex items-center gap-2 text-xs text-fgMute">
+              <span>15 秒</span>·<span>挑釁式</span>·<span>中古屋</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Case 02: 醫美 -->
+        <article class="card overflow-hidden relative" data-reveal>
+          <div class="absolute top-3 right-3 z-10">
+            <span class="label bg-paper text-ink text-[10px] tracking-widest px-2.5 py-1 rounded-full border border-ink">作品展示</span>
+          </div>
+          <div class="aspect-[4/3] bg-gradient-to-br from-ai/35 via-surface to-brand/20 flex items-center justify-center relative">
+            <div class="text-8xl">💆</div>
+            <div class="absolute top-3 left-3 flex items-center gap-2">
+              <span class="label bg-base/80 px-2.5 py-1 rounded-full border border-line">30s</span>
+              <span class="label bg-base/80 px-2.5 py-1 rounded-full border border-line">故事型</span>
+            </div>
+          </div>
+          <div class="p-6">
+            <div class="flex items-center gap-2 mb-3">
+              <span class="text-xs label text-ai">CASE 02 · 醫美</span>
+            </div>
+            <h3 class="font-bold text-lg mb-2">「術前焦慮 → 術後蛻變」</h3>
+            <p class="body-sm mb-4 leading-relaxed">35 歲客人真實故事線 + 醫生解釋迷思 + 恢復日記。賣「放心」不賣療程,合規又吸睛。</p>
+            <div class="flex items-center gap-2 text-xs text-fgMute">
+              <span>30 秒</span>·<span>故事 / 情感型</span>·<span>電波 / 拉皮</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Case 03: 美容 -->
+        <article class="card overflow-hidden relative" data-reveal>
+          <div class="absolute top-3 right-3 z-10">
+            <span class="label bg-paper text-ink text-[10px] tracking-widest px-2.5 py-1 rounded-full border border-ink">作品展示</span>
+          </div>
+          <div class="aspect-[4/3] bg-gradient-to-br from-gold/35 via-surface to-ai/20 flex items-center justify-center relative">
+            <div class="text-8xl">💅</div>
+            <div class="absolute top-3 left-3 flex items-center gap-2">
+              <span class="label bg-base/80 px-2.5 py-1 rounded-full border border-line">15s</span>
+              <span class="label bg-base/80 px-2.5 py-1 rounded-full border border-line">生活型</span>
+            </div>
+          </div>
+          <div class="p-6">
+            <div class="flex items-center gap-2 mb-3">
+              <span class="text-xs label text-gold">CASE 03 · 美容</span>
+            </div>
+            <h3 class="font-bold text-lg mb-2">「素人美甲改造」</h3>
+            <p class="body-sm mb-4 leading-relaxed">路人挑戰第一次做美甲 + 4 小時前後對比 + 朋友反應。「我也可以」的代入感,讓觀看直接變預約。</p>
+            <div class="flex items-center gap-2 text-xs text-fgMute">
+              <span>15 秒</span>·<span>對比 / 生活型</span>·<span>美甲 / 美睫</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Case 04: 餐飲 -->
+        <article class="card overflow-hidden relative" data-reveal>
+          <div class="absolute top-3 right-3 z-10">
+            <span class="label bg-paper text-ink text-[10px] tracking-widest px-2.5 py-1 rounded-full border border-ink">作品展示</span>
+          </div>
+          <div class="aspect-[4/3] bg-gradient-to-br from-purple-500/30 via-surface to-brand/20 flex items-center justify-center relative">
+            <div class="text-8xl">🍜</div>
+            <div class="absolute top-3 left-3 flex items-center gap-2">
+              <span class="label bg-base/80 px-2.5 py-1 rounded-full border border-line">30s</span>
+              <span class="label bg-base/80 px-2.5 py-1 rounded-full border border-line">視覺衝擊</span>
+            </div>
+          </div>
+          <div class="p-6">
+            <div class="flex items-center gap-2 mb-3">
+              <span class="text-xs label" style="color:#A78BFA;">CASE 04 · 餐飲</span>
+            </div>
+            <h3 class="font-bold text-lg mb-2">「好萊塢級用餐場景」</h3>
+            <p class="body-sm mb-4 leading-relaxed">AI 渲染巨星在餐廳用餐 + 食物特寫 + 電影感調色。把 NT$ 300 套餐拍成 NT$ 3,000 的質感。</p>
+            <div class="flex items-center gap-2 text-xs text-fgMute">
+              <span>30 秒</span>·<span>視覺 / 電影感</span>·<span>餐廳 / 咖啡廳</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+      <p class="text-center text-xs text-fgMute/70 mt-8" data-reveal>* 以上為 AI 概念示範,非真實客戶投放數據。真實合作後將提供實際後台截圖與投放成效。</p>
+
+      <div class="text-center mt-10" data-reveal>
+        <a href="https://lin.ee/uXgDcE3" target="_blank" rel="noopener" class="btn-brand inline-flex text-sm px-6 py-3 shadow-xl shadow-brand/20">
+          免費競品分析 →
+        </a>
+        <p class="text-xs text-fgMute mt-3">告訴我你的產業,我們幫你看 3-5 支競品短劇,給你 1 頁可執行的差異化策略</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TESTIMONIAL ============ -->
+  <section class="py-24 md:py-32 bg-surface2">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <div class="label text-fgMute mb-8" data-reveal>— 客戶怎麼說</div>
+      <blockquote class="text-2xl md:text-4xl font-bold leading-snug mb-10" data-reveal>
+        「以前覺得 AI 是大公司在玩的事，實際合作後才發現這件事可以變得<span class="grad-text">很具體、很實在</span>。這團隊給的不是工具，是看得到效果的業務系統。」
+      </blockquote>
+      <div class="flex items-center justify-center gap-3" data-reveal>
+        <div class="w-10 h-10 rounded-full bg-brand/20 flex items-center justify-center text-sm">客</div>
+        <div class="text-left">
+          <div class="text-sm font-medium">王先生(化名)</div>
+          <div class="note">中部 · 房仲業者 · 標準訂閱 6 個月</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq" class="faq-section py-24 md:py-32">
+    <div class="max-w-6xl mx-auto px-6">
+      <!-- Header -->
+      <div class="text-center mb-16" data-reveal>
+        <div class="flex items-center justify-center gap-3 mb-6">
+          <span class="w-12 h-px bg-gradient-to-r from-transparent to-brand"></span>
+          <span class="label" style="color:#E5553D;">FAQ · 06</span>
+          <span class="w-12 h-px bg-gradient-to-l from-transparent to-brand"></span>
+        </div>
+        <h2 class="h2-section mb-5 max-w-3xl mx-auto">客戶最常問的 <span class="grad-text">8 個問題</span></h2>
+        <p class="body max-w-2xl mx-auto">這些是我們被問過最多次的。點開看答案,沒寫到的再加 LINE 直接問。</p>
+      </div>
+
+      <!-- 8 個 Q&A 卡片 -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+        <details class="faq-card faq-c1" data-reveal>
+          <summary>
+            <span class="faq-num">Q1</span>
+            <span class="faq-q-text">AI 短劇會不會很假?</span>
+            <span class="faq-toggle">+</span>
+          </summary>
+          <div class="faq-a">不會。2026 最新的 AI 圖像 + 配音 + 剪輯模型,畫面已達商業影片標準。更關鍵的是:<strong>消費者看的是「故事有沒有打中我」,不是演員帥不帥。</strong>我們做過的 15s 房仲短劇完播率 60%+(傳統平均 30%)。</div>
+        </details>
+
+        <details class="faq-card faq-c2" data-reveal>
+          <summary>
+            <span class="faq-num">Q2</span>
+            <span class="faq-q-text">會有版權問題嗎?會被下架嗎?</span>
+            <span class="faq-toggle">+</span>
+          </summary>
+          <div class="faq-a">不會。AI 生成的虛擬人物「真實世界不存在」,<strong>沒有肖像權過期、沒有藝人醜聞、沒有經紀公司來告</strong>。音樂用商業授權庫,平台不消音。我們客戶影片到目前零下架。</div>
+        </details>
+
+        <details class="faq-card faq-c3" data-reveal>
+          <summary>
+            <span class="faq-num">Q3</span>
+            <span class="faq-q-text">包月結束後網站怎麼辦?</span>
+            <span class="faq-toggle">+</span>
+          </summary>
+          <div class="faq-a">包月期間,主機 + 資料庫 + 網域 + 工程師日常維護,全部我們吸收。合約結束想保留網站,<strong>第二年起每年 NT$ 15,000-25,000</strong>(主機 + 資安)。不續就關,不綁約。</div>
+        </details>
+
+        <details class="faq-card faq-c4" data-reveal>
+          <summary>
+            <span class="faq-num">Q4</span>
+            <span class="faq-q-text">我已有網站,還要一條龍嗎?</span>
+            <span class="faq-toggle">+</span>
+          </summary>
+          <div class="faq-a">看狀況。網站「<strong>有流量 + 有訂單 + 手機順</strong>」,只需要買【單支 / 小專案】影音素材。「沒流量 / 沒人填表 / 手機卡」,才需要一條龍。我們會進駐現有網站改文案 + 按鈕 + 嵌入短劇。</div>
+        </details>
+
+        <details class="faq-card faq-c1" data-reveal>
+          <summary>
+            <span class="faq-num">Q5</span>
+            <span class="faq-q-text">不滿意可以改嗎?劇本能先看嗎?</span>
+            <span class="faq-toggle">+</span>
+          </summary>
+          <div class="faq-a">可以,<strong>劇本一定要先看</strong>。<br>· 階段 1(劇本):先給你「黃金痛點劇本 + AI 故事板」,可改 2 次才定稿<br>· 階段 2(影片):生成後字幕 / 音樂可微調 1 次<br>影片定稿後不能改大綱,階段 1 審稿最重要。</div>
+        </details>
+
+        <details class="faq-card faq-c2" data-reveal>
+          <summary>
+            <span class="faq-num">Q6</span>
+            <span class="faq-q-text">我是傳統行業也適合嗎?</span>
+            <span class="faq-toggle">+</span>
+          </summary>
+          <div class="faq-a"><strong>越傳統越適合</strong>,對手還在發傳單。<br>· 房仲:免出鏡,AI 渲染「豪宅開箱」短劇<br>· 美業:用「情侶反轉故事」帶出皮膚痛點<br>· 餐飲:AI 渲染「好萊塢巨星用餐」場景</div>
+        </details>
+
+        <details class="faq-card faq-c3" data-reveal>
+          <summary>
+            <span class="faq-num">Q7</span>
+            <span class="faq-q-text">我要給什麼素材?會花很多時間嗎?</span>
+            <span class="faq-toggle">+</span>
+          </summary>
+          <div class="faq-a"><strong>10 分鐘就夠</strong>。填一份「產品痛點表單」(我們做好你勾就好),或丟官網 + 商品照。其他全部我們做:市調、劇本、虛擬人設、畫面、配音、字幕、剪輯、配樂、網頁埋碼。你只審核,真「翹腳等成品」。</div>
+        </details>
+
+        <details class="faq-card faq-c4" data-reveal>
+          <summary>
+            <span class="faq-num">Q8</span>
+            <span class="faq-q-text">有包含廣告投放(投流)嗎?</span>
+            <span class="faq-toggle">+</span>
+          </summary>
+          <div class="faq-a">方案核心是「影音 + 網頁」,不含投流。但影片和網頁已埋好 <strong>Pixel + GA4 追蹤碼</strong>,投流時能精準追蹤。需要代操有「廣告代操加購」,幫你推到在地 5 公里內的精準客戶。</div>
+        </details>
+      </div>
+
+      <p class="text-center note mt-10" data-reveal>沒寫到的問題,加 LINE 我會親自回。<a href="https://lin.ee/uXgDcE3" class="text-brand hover:underline" target="_blank" rel="noopener">lin.ee/uXgDcE3</a></p>
+    </div>
+  </section>
+
+  <!-- ============ FINAL CTA ============ -->
+  <section id="cta" class="py-24 md:py-32 relative overflow-hidden">
+    <div class="glow-orb bg-brand -top-32 left-1/4"></div>
+    <div class="glow-orb bg-ai bottom-0 right-1/4"></div>
+    <div class="relative max-w-3xl mx-auto px-6 text-center">
+      <div class="label text-fgMute mb-8" data-reveal>— 最後一步</div>
+      <h2 class="h2-section mb-8 leading-tight" data-reveal>
+        5 分鐘，<br />
+        <span class="grad-text">找出你的流量與成交問題</span>。<br />
+        免費。
+      </h2>
+      <p class="body max-w-xl mx-auto mb-12" data-reveal>把你的 LINE 帳號加我們好友、傳一句「<strong class="text-fg">我想做 AI 流量健檢</strong>」。<br />24 小時內我們會安排 30 分鐘免費診斷,看完你會更清楚下一步怎麼走。</p>
+
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4 max-w-xl mx-auto" data-reveal>
+        <a href="https://lin.ee/uXgDcE3" target="_blank" rel="noopener" class="btn-brand text-base px-7 py-4 shadow-2xl shadow-brand/30 flex-1 sm:flex-none">
+          🔥 免費 AI 流量健檢 →
+        </a>
+        <a href="https://lin.ee/uXgDcE3" target="_blank" rel="noopener" class="btn-ghost text-sm flex-1 sm:flex-none">
+          免費競品分析
+        </a>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 mt-12 max-w-2xl mx-auto text-sm" data-reveal>
+        <a href="https://lin.ee/uXgDcE3" target="_blank" rel="noopener" class="card p-4 hover:border-brand/40 transition text-center">
+          <div class="text-2xl mb-1">🤖</div>
+          <div class="font-bold text-fg text-xs">免費 AI 流量健檢</div>
+        </a>
+        <a href="https://lin.ee/uXgDcE3" target="_blank" rel="noopener" class="card p-4 hover:border-brand/40 transition text-center">
+          <div class="text-2xl mb-1">🎯</div>
+          <div class="font-bold text-fg text-xs">免費獲客診斷</div>
+        </a>
+        <a href="https://lin.ee/uXgDcE3" target="_blank" rel="noopener" class="card p-4 hover:border-brand/40 transition text-center">
+          <div class="text-2xl mb-1">🔍</div>
+          <div class="font-bold text-fg text-xs">免費帳號健檢</div>
+        </a>
+      </div>
+
+      <p class="text-xs text-fgMute mt-10" data-reveal>30 天不滿意退 50% · 隨時可停約 · 報價透明 · 不收隱藏費</p>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="border-t border-line py-10">
+    <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-fgMute">
+      <div class="flex items-center gap-3 shrink-0 flex-wrap">
+        <span class="serif font-bold text-lg tracking-tight text-fg whitespace-nowrap">AI商業成長</span>
+        <span class="text-fgMute">·</span>
+        <span class="text-fgMute whitespace-nowrap">© 2026 AI商業成長工作室</span>
+      </div>
+      <div class="flex gap-6">
+        <a href="#hero" class="hover:text-fg transition">回頂部</a>
+        <a href="#cta" class="hover:text-fg transition">聯絡</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+    }, { threshold: 0.1, rootMargin: '0px 0px -60px 0px' });
+    document.querySelectorAll('[data-reveal]').forEach(el => io.observe(el));
+  </script>
+
+  <!-- ============ CHAT WIDGET ============ -->
+  <div class="cw" id="cw">
+    <button class="cw-trigger" id="cw-trigger" aria-label="開啟對話">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+      </svg>
+    </button>
+    <div class="cw-window" id="cw-window" role="dialog" aria-label="AI 助理">
+      <div class="cw-head">
+        <div style="display:flex;align-items:center;gap:10px;">
+          <div class="cw-avatar">A</div>
+          <div>
+            <div style="font-weight:700;font-size:14px;color:#fff;">AI 助理</div>
+            <div style="font-size:10px;color:#00E5A5;display:flex;align-items:center;gap:5px;margin-top:2px;">
+              <span style="width:6px;height:6px;background:#00E5A5;border-radius:50%;animation:breath 2s ease-in-out infinite;"></span>
+              線上 · 即時回覆
+            </div>
+          </div>
+        </div>
+        <button class="cw-close" id="cw-close" aria-label="關閉">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </div>
+      <div class="cw-msgs" id="cw-msgs"></div>
+      <div class="cw-quick" id="cw-quick">
+        <button class="cw-qbtn" data-q="了解方案">了解方案</button>
+        <button class="cw-qbtn" data-q="看作品">看作品</button>
+        <button class="cw-qbtn" data-q="加 LINE">加 LINE 直接聊</button>
+      </div>
+      <div class="cw-input">
+        <input type="text" class="cw-text" id="cw-text" placeholder="輸入訊息…" maxlength="200" />
+        <button class="cw-send" id="cw-send" aria-label="送出">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+        </button>
+      </div>
+      <div class="cw-foot">POWERED BY AI · 24H REPLY</div>
+    </div>
+  </div>
+
+  <script>
+  (function() {
+    const $ = (s) => document.querySelector(s);
+    const trigger = $('#cw-trigger');
+    const win = $('#cw-window');
+    const closeBtn = $('#cw-close');
+    const msgs = $('#cw-msgs');
+    const text = $('#cw-text');
+    const send = $('#cw-send');
+    const quick = document.querySelectorAll('.cw-qbtn');
+    let firstOpen = true;
+    let busy = false;
+
+    function open() {
+      trigger.classList.add('hide');
+      win.classList.add('open');
+      if (firstOpen) {
+        setTimeout(() => {
+          addBot('嗨！我是 AI 助理 👋');
+          setTimeout(() => addBot('關於 AI 短劇、網頁架站，或想直接加 LINE 聊，都可以問我。'), 700);
+          firstOpen = false;
+        }, 250);
+      }
+      setTimeout(() => text.focus(), 400);
+    }
+    function close() {
+      trigger.classList.remove('hide');
+      win.classList.remove('open');
+    }
+    trigger.addEventListener('click', open);
+    closeBtn.addEventListener('click', close);
+
+    function addBot(html) {
+      const div = document.createElement('div');
+      div.className = 'cw-msg bot';
+      div.innerHTML = `<div class="cw-avatar cw-avatar-sm">A</div><div class="cw-bubble">${html}</div>`;
+      msgs.appendChild(div);
+      scroll();
+    }
+    function addUser(html) {
+      const div = document.createElement('div');
+      div.className = 'cw-msg user';
+      div.innerHTML = `<div class="cw-bubble">${html}</div>`;
+      msgs.appendChild(div);
+      scroll();
+    }
+    function showTyping() {
+      const div = document.createElement('div');
+      div.className = 'cw-msg bot';
+      div.id = 'cw-typing';
+      div.innerHTML = `<div class="cw-avatar cw-avatar-sm">A</div><div class="cw-bubble"><div class="cw-typing"><span></span><span></span><span></span></div></div>`;
+      msgs.appendChild(div);
+      scroll();
+    }
+    function hideTyping() {
+      const t = document.getElementById('cw-typing');
+      if (t) t.remove();
+    }
+    function showLineCard() {
+      const div = document.createElement('div');
+      div.className = 'cw-msg bot';
+      div.innerHTML = `
+        <div class="cw-avatar cw-avatar-sm">A</div>
+        <div>
+          <div class="cw-line">
+            <img src="https://api.qrserver.com/v1/create-qr-code/?size=220x220&data=https%3A%2F%2Flin.ee%2FuXgDcE3" alt="LINE QR" />
+          </div>
+          <div style="font-size:12px;color:#B3B3B3;margin-top:8px;">LINE 官方帳號 · <span style="color:#fff;font-family:'JetBrains Mono',monospace;background:rgba(255,255,255,0.08);padding:2px 6px;border-radius:4px;">lin.ee/uXgDcE3</span></div>
+          <a href="https://lin.ee/uXgDcE3" target="_blank" rel="noopener" class="cw-linebtn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63h2.386c.346 0 .627.285.627.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016a.63.63 0 0 1-.629.628.62.62 0 0 1-.508-.253l-2.443-3.317v2.94a.629.629 0 1 1-1.257 0V8.108a.628.628 0 0 1 1.135-.375l2.44 3.317V8.108a.628.628 0 1 1 1.257 0v4.771h.005zm-5.741 0a.629.629 0 0 1-.629.629.628.628 0 0 1-.627-.629V8.108a.627.627 0 1 1 1.254 0v4.771h.002zM4.751 9.092c.346 0 .629.281.629.63v2.367l1.746-2.746a.628.628 0 0 1 1.087.034c.205.318.193.738-.063 1.022L7.43 12.27l1.387 1.984a.63.63 0 0 1-.526.969.624.624 0 0 1-.527-.291L5.38 12.21v2.653a.628.628 0 0 1-1.255 0V9.722c0-.349.28-.63.626-.63zM24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"/></svg>
+            開啟 LINE 加好友
+          </a>
+          <div style="font-size:10px;color:#6B6B73;margin-top:6px;line-height:1.5;">加好友後 24 小時內會有真人回覆<br/>（不是 AI 罐頭）</div>
+        </div>
+      `;
+      msgs.appendChild(div);
+      scroll();
+    }
+    function scroll() { msgs.scrollTop = msgs.scrollHeight + 9999; }
+
+    function botReply(input) {
+      const t = (input || '').toLowerCase();
+      // 觸發 LINE 卡片的情境
+      if (/line|加好友|聯絡|聊聊|找|真人|直接/.test(t)) {
+        setTimeout(showLineCard, 400);
+        return '沒問題，這是 LINE 官方帳號 QR：';
+      }
+      if (/方案|價格|多少|費用|錢|報價|合作/.test(t)) {
+        return '我們有兩種合作方式：<br/><br/><b>【一次性】短劇三階(都含字幕+背景音樂)</b><br/>? 基礎 15s：NT$ 3,000-5,000(3 天交)<br/>? 標準 30s：NT$ 8,800-15,000(3-5 天交) ⭐<br/>? 精緻 60s：NT$ 18,000-30,000(5-10 天交)<br/>? 小專案 3 支：NT$ 15,000-25,000<br/>? 銷售頁架站：NT$ 30,000 起<br/><br/><b>【月度訂閱】(可隨時停)</b><br/>? 小資 8,800 / 月(2 支)<br/>? 標準 28,000 / 月(8 支)<br/>? 旗艦 78,000 / 月(15 支)<br/><br/>訂閱 30 天不滿意退 50%，想了解哪一種？';
+      }
+      if (/作品|案例|看|過往|portfolio|作品集/.test(t)) {
+        return '最近做了幾支房仲 AI 短劇，完整腳本跟投放數據在「作品」區。<br/><br/>想直接看，加 LINE 我傳給你。';
+      }
+      if (/短劇|影片|拍|製作|腳本/.test(t)) {
+        return 'AI 短劇一條龍：<br/>需求訪談 → 主題企劃 → 腳本/分鏡 → AI 素材 → AI 配音 → 字幕 → 音樂 → 剪輯 → 交付 → 修改<br/><br/>AI 短劇 10 步 SOP(都含字幕+背景音樂):<br/>• 基礎 15s NT$ 3,000-5,000<br/>• 標準 30s NT$ 8,800-15,000 ⭐<br/>• 精緻 60s NT$ 18,000-30,000';
+      }
+      if (/網站|架站|官網|電商|頁|landing|landing page/.test(t)) {
+        return '網頁架站我們也做：<br/>• 一頁式電商 / 品牌官網 / Landing Page<br/>• 從 NT$ 5 萬 / 頁 起<br/>• 含設計、金流、主機、維護一條龍';
+      }
+      if (/時間|多久|什麼時候|急|趕/.test(t)) {
+        return '一般時程：<br/>• 單支短劇：7 天<br/>• 小專案（5 支）：14 天<br/>• 標準專案：30 天首波上線<br/><br/>急件 +NT\,000(加價)。';
+      }
+      if (/你好|hi|嗨|哈囉|hello|安/.test(t)) {
+        return '嗨！很高興為你服務 👋<br/>想了解方案、看作品，還是直接加 LINE 比較快？';
+      }
+      return '收到！詳細的我們 24 小時內會親自回你。<br/><br/>想更即時的話，加 LINE 直接聊：';
+    }
+
+    function send_(msg) {
+      msg = (msg || text.value).trim();
+      if (!msg || busy) return;
+      busy = true;
+      addUser(msg);
+      text.value = '';
+      showTyping();
+      setTimeout(() => {
+        hideTyping();
+        const reply = botReply(msg);
+        const triggersLine = /line|加好友|聯絡/.test(msg.toLowerCase());
+        addBot(reply);
+        if (triggersLine) {
+          setTimeout(showLineCard, 300);
+        }
+        busy = false;
+        setTimeout(() => text.focus(), 100);
+      }, 700 + Math.random() * 500);
+    }
+    send.addEventListener('click', () => send_());
+    text.addEventListener('keypress', (e) => { if (e.key === 'Enter') send_(); });
+    quick.forEach(btn => btn.addEventListener('click', () => send_(btn.dataset.q)));
+  })();
+  </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
